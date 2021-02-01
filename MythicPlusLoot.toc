@@ -4,4 +4,5 @@
 ## Version: 0.0.1
 ## Notes: Gear scaling for m+ dungeons.
 
+libs\load_libs.xml
 MythicPlusLoot.lua
