@@ -6,4 +6,4 @@ To install manually:
 - Create a MythicPlusLoot folder in your WoW AddOns folder and add the two files in this repository.
 
 To access in game:
-- Type /mpl in chat.
+- Type /mpl in chat or click the minimap button.
