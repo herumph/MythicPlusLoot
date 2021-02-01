@@ -562,7 +562,14 @@ function initFrames()
 		local tex = frame:CreateTexture(nil, "BACKGROUND");
 		tex:SetAllPoints();
 		tex:SetColorTexture(unpack(MPL.BackdropColor));
-
+		
+		-- Escape functionality 
+		frame:SetScript("OnKeyUp", function(self, key)
+			if key == "ESCAPE" then
+				closeMainFrame();
+			end
+		end);
+		
 		-- Close button
 		frame.closeButton = CreateFrame("Button", "MPLCloseButton", frame, "UIPanelCloseButton");
 		frame.closeButton:ClearAllPoints();
