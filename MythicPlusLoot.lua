@@ -558,13 +558,6 @@ function initFrames()
 		frame:SetPoint("CENTER"); 
 		frame:SetWidth(sizex); 
 		frame:SetHeight(sizey);
-		frame:EnableKeyboard();
-
-		frame:SetScript("OnKeyUp", function(self, key)
-			if key == "ESCAPE" then
-				closeMainFrame();
-			end
-		end);
 
 		local tex = frame:CreateTexture(nil, "BACKGROUND");
 		tex:SetAllPoints();
