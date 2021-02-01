@@ -2,14 +2,31 @@ local AddonName, MPL = ...;
 local sizex = 650;
 local sizey = 555;
 
+local frame;
 local framesInitialized;
 local itemsInitialized;
+
+local LDB = LibStub("LibDataBroker-1.1")
+local LDBI = LibStub("LibDBIcon-1.0")
 
 SLASH_MYTHICPLUSLOOT1 = "/mpl";
 
 function SlashCmdList.MYTHICPLUSLOOT(cmd, editbox)
 	initFrames();
 end
+
+local icon = LDB:NewDataObject("MythicPlusLoot", {
+	type = "launcher",
+	icon = "Interface\\AddOns\\MythicPlusLoot\\textures\\icon",
+	OnClick = function(button, buttonPressed)
+		if not framesInitialized then
+			initFrames();
+		else
+			closeMainFrame()
+		end
+	end,
+})
+LDBI:Register("MythicPlusLoot", icon);
 
 local iLevelListDrop = {
     [1] = 184,
@@ -521,9 +538,17 @@ end
 
 local armorText, slotText, mythicText, sourceText;
 MPL.BackdropColor = { 0.058823399245739, 0.058823399245739, 0.058823399245739, 0.9}
+
+function closeMainFrame()
+	if frame and framesInitialized then
+		frame:Hide();
+		framesInitialized = false;
+	end
+end
+
 function initFrames()
 	if not framesInitialized then
-		local frame = CreateFrame("Frame", "MPL", UIParent);
+		frame = CreateFrame("Frame", "MPL", UIParent);
 		--tinsert(UISpecialFrames, frame:GetName()) -- esc key functionality but doesn't reopen
 		frame:SetMovable(true);
 		frame:EnableMouse(true);
@@ -533,10 +558,11 @@ function initFrames()
 		frame:SetPoint("CENTER"); 
 		frame:SetWidth(sizex); 
 		frame:SetHeight(sizey);
+
 		local tex = frame:CreateTexture(nil, "BACKGROUND");
 		tex:SetAllPoints();
 		tex:SetColorTexture(unpack(MPL.BackdropColor));
-		
+
 		-- Close button
 		frame.closeButton = CreateFrame("Button", "MPLCloseButton", frame, "UIPanelCloseButton");
 		frame.closeButton:ClearAllPoints();
