@@ -1,8 +1,10 @@
 ## Interface: 90002
 ## Title: MythicPlusLoot
 ## Author: Scott Davis
-## Version: 0.0.1
+## Version: 0.0.2
 ## Notes: Gear scaling for m+ dungeons.
 
 libs\load_libs.xml
+init.lua
+locales\_locales.xml
 MythicPlusLoot.lua
