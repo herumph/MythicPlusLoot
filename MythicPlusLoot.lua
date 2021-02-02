@@ -25,6 +25,11 @@ local icon = LDB:NewDataObject("MythicPlusLoot", {
 			closeMainFrame()
 		end
 	end,
+	OnTooltipShow = function(tooltip)
+		if not tooltip or not tooltip.AddLine then return end
+		tooltip:AddLine("Mythic Plus Loot|r")
+		tooltip:AddLine("Click to toggle AddOn Window")
+	end,
 })
 LDBI:Register("MythicPlusLoot", icon);
 
@@ -124,6 +129,21 @@ local dungeonList = {
 	[8] = "Theater of Pain"
 }
 
+local classArmors = {
+	[1] = {"Warrior",4},
+	[2] = {"Paladin",4},
+	[3] = {"Hunter",3},
+	[4] = {"Rogue",2},
+	[5] = {"Priest",1},
+	[6] = {"Death Knight",4},
+	[7] = {"Shaman",3},
+	[8] = {"Mage",1},
+	[9] = {"Warlock",1},
+	[10] = {"Monk",2},
+	[11] = {"Druid",2},
+	[12] = {"Demon Hunter",2}
+}
+
 local dungeonItems = {
 	-- [item number]: {slot, armorType, dungeon}
 	-- Plaguefall
@@ -133,14 +153,14 @@ local dungeonItems = {
 	[178754] = {13, 5, 1},
 	[178755] = {4, 5, 1},
 	[178756] = {10, 1, 1},
-	[175757] = {7, 2, 1},
+	[178757] = {7, 2, 1},
 	[178759] = {1, 1, 1},
 	[178760] = {1, 2, 1},
 	[178761] = {9, 1, 1},
 	[178762] = {9, 3, 1},
 	[178763] = {3, 2, 1},
 	[178764] = {3, 3, 1},
-	[178767] = {8, 3, 1},
+	[178767] = {6, 3, 1},
 	[178769] = {12, 5, 1},
 	[178770] = {12, 5, 1},
 	[178771] = {12, 5, 1},
@@ -222,7 +242,7 @@ local dungeonItems = {
 	[178704] = {6, 1, 4},
 	[178705] = {7, 1, 4},
 	[178706] = {7, 4, 4},
-	[178707] = {7, 2, 4},
+	[178707] = {2, 5, 4},
 	[178708] = {12, 5, 4},
 	[178709] = {13, 5, 4},
 	[178710] = {13, 5, 4},
@@ -277,7 +297,7 @@ local dungeonItems = {
 	[180108] = {9, 2, 6},
 	[180109] = {8, 1, 6},
 	[180110] = {8, 3, 6},
-	[180111] = {9, 2, 6},
+	[180111] = {8, 2, 6},
 	[180112] = {16, 5, 6},
 	[180113] = {6, 4, 6},
 	[180114] = {6, 3, 6},
@@ -297,7 +317,7 @@ local dungeonItems = {
 	[178736] = {11, 5, 7},
 	[178737] = {13, 5, 7},
 	[178738] = {1, 3, 7},
-	[178739] = {9, 3, 7},
+	[178739] = {9, 4, 7},
 	[178740] = {3, 1, 7},
 	[178741] = {6, 2, 7},
 	[178742] = {12, 5, 7},
@@ -547,9 +567,12 @@ function closeMainFrame()
 end
 
 function initFrames()
-	if not framesInitialized then
+	local classID = GetSpecialization();
+	local specID select(1, GetSpecializationInfo(classID));
+
+	if not framesInitialized or not frame:IsShown() then
 		frame = CreateFrame("Frame", "MPL", UIParent);
-		--tinsert(UISpecialFrames, frame:GetName()) -- esc key functionality but doesn't reopen
+		--tinsert(UISpecialFrames, "MPL") -- esc key functionality but doesn't work on reopen
 		frame:SetMovable(true);
 		frame:EnableMouse(true);
 		frame:RegisterForDrag("LeftButton");
@@ -562,13 +585,6 @@ function initFrames()
 		local tex = frame:CreateTexture(nil, "BACKGROUND");
 		tex:SetAllPoints();
 		tex:SetColorTexture(unpack(MPL.BackdropColor));
-		
-		-- Escape functionality 
-		frame:SetScript("OnKeyUp", function(self, key)
-			if key == "ESCAPE" then
-				closeMainFrame();
-			end
-		end);
 		
 		-- Close button
 		frame.closeButton = CreateFrame("Button", "MPLCloseButton", frame, "UIPanelCloseButton");
@@ -584,7 +600,7 @@ function initFrames()
 		
 		local dropDownWidth = 125;
 		-- Armor type drop down
-		armorText = "Armor Type"
+		armorText = armorTypes[classArmors[classID][2]];
 		local armorDropDown = CreateFrame("Frame", "MPLArmorDropDown", frame, "UIDropDownMenuTemplate");
 		armorDropDown:SetPoint("TOPLEFT", frame, "TOPLEFT", 0, -10);
 		UIDropDownMenu_SetWidth(armorDropDown, dropDownWidth); 
@@ -600,7 +616,12 @@ function initFrames()
 					info.hasArrow = false;
 					info.value = armorTypes[i];
 					info.arg1 = armorTypes[i];
-					info.checked = false;
+					-- works but leaves it as checked when selecting another option
+					if i == classArmors[classID][2] then 
+						info.checked = true;
+					else
+						info.checked = false;
+					end
 					UIDropDownMenu_AddButton(info);
 				end
 			end
