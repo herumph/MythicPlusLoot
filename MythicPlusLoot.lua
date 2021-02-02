@@ -600,7 +600,8 @@ function initFrames()
 		
 		local dropDownWidth = 125;
 		-- Armor type drop down
-		armorText = armorTypes[classArmors[classID][2]];
+		--armorText = armorTypes[classArmors[classID][2]];
+		armorText = "Armor Type";
 		local armorDropDown = CreateFrame("Frame", "MPLArmorDropDown", frame, "UIDropDownMenuTemplate");
 		armorDropDown:SetPoint("TOPLEFT", frame, "TOPLEFT", 0, -10);
 		UIDropDownMenu_SetWidth(armorDropDown, dropDownWidth); 
@@ -617,11 +618,11 @@ function initFrames()
 					info.value = armorTypes[i];
 					info.arg1 = armorTypes[i];
 					-- works but leaves it as checked when selecting another option
-					if i == classArmors[classID][2] then 
-						info.checked = true;
-					else
-						info.checked = false;
-					end
+					--if i == classArmors[classID][2] then 
+					--	info.checked = true;
+					--else
+					--	info.checked = false;
+					--end
 					UIDropDownMenu_AddButton(info);
 				end
 			end
