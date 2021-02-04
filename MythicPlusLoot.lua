@@ -1,4 +1,5 @@
 local AddonName, MPL = ...;
+local L = MPL.L or {}
 local sizex = 650;
 local sizey = 555;
 
@@ -14,12 +15,6 @@ SLASH_MYTHICPLUSLOOT1 = "/mpl";
 function SlashCmdList.MYTHICPLUSLOOT(cmd, editbox)
 	initFrames();
 end
-
---------------------------------------------------------------------------
-
-
-
---------------------------------------------------------------------------
 
 local defaultSavedVars = {
 	global = {
@@ -99,29 +94,29 @@ local iLevelListChest = {
 }
 
 local armorTypes = {
-	[1] = "Cloth",
-	[2] = "Leather",
-	[3] = "Mail",
-	[4] = "Plate"
+	[1] = L["Cloth"],
+	[2] = L["Leather"],
+	[3] = L["Mail"],
+	[4] = L["Plate"],
 }
 
 local gearSlots = {
-	[1] = "Head",
-    [2] = "Neck",
-    [3] = "Shoulder",
-    [4] = "Back",
-    [5] = "Chest",
-    [6] = "Wrist",
-    [7] = "Hands",
-    [8] = "Waist",
-    [9] = "Legs",
-    [10] = "Feet",
-    [11] = "Finger",
-    [12] = "Trinket",
-	[13] = "One-Hand",
-	[14] = "Off-Hand",
-	[15] = "Two-Hand",
-	[16] = "Ranged"
+	[1] = L["Head"],
+    [2] = L["Neck"],
+    [3] = L["Shoulder"],
+    [4] = L["Back"],
+    [5] = L["Chest"],
+    [6] = L["Wrist"],
+    [7] = L["Hands"],
+    [8] = L["Waist"],
+    [9] = L["Legs"],
+    [10] = L["Feet"],
+    [11] = L["Finger"],
+    [12] = L["Trinket"],
+	[13] = L["One-Hand"],
+	[14] = L["Off-Hand"],
+	[15] = L["Two-Hand"],
+	[16] = L["Ranged"],
 }
 
 local mythicLevels = {
@@ -139,23 +134,23 @@ local mythicLevels = {
     [12] = "+12",
 	[13] = "+13",
     [14] = "+14",
-    [15] = "+15"
+    [15] = "+15",
 }
 
 local sourceList = {
-	[1] = "Dungeon Drop",
-    [2] = "Weekly Vault"
+	[1] = L["Dungeon Drop"],
+    [2] = L["Weekly Vault"],
 }
 
 local dungeonList = {
-	[1] = "Plaguefall",
-	[2] = "De Other Side",
-	[3] = "Halls of Atonement",
-	[4] = "Mists of Tirna Scithe",
-	[5] = "Sanguine Depths",
-	[6] = "Spires of Ascension",
-	[7] = "The Necrotic Wake",
-	[8] = "Theater of Pain"
+	[1] = L["Plaguefall"],
+	[2] = L["De Other Side"],
+	[3] = L["Halls of Atonement"],
+	[4] = L["Mists of Tirna Scithe"],
+	[5] = L["Sanguine Depths"],
+	[6] = L["Spires of Ascension"],
+	[7] = L["The Necrotic Wake"],
+	[8] = L["Theater of Pain"],
 }
 
 local dungeonItems = {
@@ -388,43 +383,35 @@ function MyDropDownMenu_OnLoad()
    info = {};
    info.text = "This is an option in the menu.";
    info.value = "OptionVariable";
-   info.func = FunctionCalledWhenOptionIsClicked 
+   info.func = FunctionCalledWhenOptionIsClicked
 			 -- can also be done as function() FunctionCalledWhenOptionIsClicked() end;
-   -- Add the above information to the options menu as a button.
-   UIDropDownMenu_AddButton(info);
-end
-
-function MyDropDownMenu_OnLoad()
-   info            = {};
-   info.text       = "This is an option in the menu.";
-   info.value      = "OptionVariable";
-   info.func       = FunctionCalledWhenOptionIsClicked 
-			 -- can also be done as function() FunctionCalledWhenOptionIsClicked() end;
-   
    -- Add the above information to the options menu as a button.
    UIDropDownMenu_AddButton(info);
 end
 
 local xStart, yStart, yOffset, xSecondColumn = 75, -100, -110, 325;
 function createDungeonText(frame)
-	for i=1,8 do
+	for i=1,#dungeonList do
+		local justifyH;
+		local offsetX;
+		local offsetY;
 		if i<5 then
-			local dungeonString = frame.CreateFontString(frame, "OVERLAY", "GameTooltipText");
-			dungeonString:SetFontObject("GameFontNormalLarge");
-			dungeonString:SetJustifyH("RIGHT");
-			--dungeonString:SetJustifyV("CENTER");
-			dungeonString:SetPoint("TOPLEFT", frame, "TOPLEFT", xStart, yStart+(i-1)*yOffset);
-			dungeonString:SetTextColor(1, 1, 1, 1);
-			dungeonString:SetText(dungeonList[i]..": ");
+			justifyH = "RIGHT"
+			offsetX = xStart
+			offsetY = yStart+(i-1)*yOffset
 		else
-			local dungeonString = frame.CreateFontString(frame, "OVERLAY", "GameTooltipText");
-			dungeonString:SetFontObject("GameFontNormalLarge");
-			dungeonString:SetJustifyH("LEFT");
-			--dungeonString:SetJustifyV("CENTER");
-			dungeonString:SetPoint("TOPLEFT", frame, "TOPLEFT", xStart+xSecondColumn, yStart+(i-5)*yOffset);
-			dungeonString:SetTextColor(1, 1, 1, 1);
-			dungeonString:SetText(dungeonList[i]..": ");
+			justifyH = "LEFT"
+			offsetX = xStart+xSecondColumn
+			offsetY = yStart+(i-5)*yOffset
 		end
+
+		local dungeonString = frame.CreateFontString(frame, "OVERLAY", "GameTooltipText");
+		dungeonString:SetFontObject("GameFontNormalLarge");
+		dungeonString:SetJustifyH(justifyH);
+		--dungeonString:SetJustifyV("CENTER");
+		dungeonString:SetPoint("TOPLEFT", frame, "TOPLEFT", offsetX, offsetY);
+		dungeonString:SetTextColor(1, 1, 1, 1);
+		dungeonString:SetText(dungeonList[i]..": ");
 	end
 end
 
@@ -455,7 +442,7 @@ end
 
 function createItems(frame, armorSelection, itemSlot, dungeonLevel, itemSource)
 	local xItemStart, yItemStart, yItemOffset, xItemSecondColumn = 75, -120, -220, 325;
-	
+
 	local dungeonCount = {
 		[1] = 0,
 		[2] = 0,
@@ -469,30 +456,30 @@ function createItems(frame, armorSelection, itemSlot, dungeonLevel, itemSource)
 
 	-- If a new option is selected, delete the old frames
 	clearFrames();
-	
+
 	-- index tables
 	local itemIndex = getIndex(gearSlots, itemSlot);
 	local armorIndex = getIndex(armorTypes, armorSelection);
 	local dungeonIndex = indexTable(dungeonList);
-	
+
 	-- get items
 	local itemList = {};
 	for k,v in pairs(dungeonItems) do
 		if v[1] == itemIndex and (v[2] == armorIndex or v[2] == 5) then
 			itemList[k] = v;
 		end
-	end	
-	
+	end
+
 	-- Dungeon drop or weekly vault; default to dungeon drop
 	local itemLevel;
-	if itemSource == "Weekly Vault" and dungeonLevel ~= 0 then
+	if itemSource == L["Weekly Vault"] and dungeonLevel ~= 0 then
 		itemLevel = iLevelListChest[dungeonLevel];
 	elseif dungeonLevel ~= 0 then
 		itemLevel = iLevelListDrop[dungeonLevel];
 	else
 		itemLevel = iLevelListDrop[1];
 	end
-	
+
 	local xSize, ySize = 32, 32;
 	itemLevel = 1498+(itemLevel-184);
 	for k,v in pairs(itemList) do
@@ -500,9 +487,9 @@ function createItems(frame, armorSelection, itemSlot, dungeonLevel, itemSource)
 		local f = CreateFrame("Frame", "MPLItemIcon"..k, frame);
 		tinsert(framepool, f);
 		f:SetSize(xSize, ySize);
-		
+
 		if v[3]<5 then
-			if v[3] == lastDungeon then 
+			if v[3] == lastDungeon then
 				i = i+1;
 			else
 				i = 0;
@@ -511,15 +498,15 @@ function createItems(frame, armorSelection, itemSlot, dungeonLevel, itemSource)
 			f.tex = f:CreateTexture();
 			f.tex:SetAllPoints(f);
 			f.tex:SetTexture(itemIcon);
-			f:SetScript("OnEnter", 
+			f:SetScript("OnEnter",
 				function()
 					GameTooltip:SetOwner(f, "ANCHOR_BOTTOMRIGHT",f:GetWidth(),f:GetHeight());
 					GameTooltip:SetHyperlink("item:"..k.."..::::::::::::2:6807:"..itemLevel);
 					GameTooltip:Show();
 				end
 			);
-			f:SetScript("OnLeave", 
-				function() 
+			f:SetScript("OnLeave",
+				function()
 					GameTooltip:Hide();
 				end
 			);
@@ -527,28 +514,28 @@ function createItems(frame, armorSelection, itemSlot, dungeonLevel, itemSource)
 				function(self, button)
 					local shift_key = IsShiftKeyDown()
 					if button == "LeftButton" then
-						if shift_key then 
-							itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo("item:"..k.."..::::::::::::2:6807:"..itemLevel) 
+						if shift_key then
+							itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo("item:"..k.."..::::::::::::2:6807:"..itemLevel)
 							SendChatMessage(itemLink)
 						end
 					end
 				end
 			);
 			-- Second column
-			else
+		else
 			f:SetPoint("TOPLEFT", frame, "TOPLEFT", xItemStart+xSecondColumn+xSize/4+dungeonCount[v[3]]*xSize*1.5, yItemStart+(v[3]-5)*yItemOffset/2-ySize+ySize/4);
 			f.tex = f:CreateTexture();
 			f.tex:SetAllPoints(f);
 			f.tex:SetTexture(itemIcon);
-			f:SetScript("OnEnter", 
+			f:SetScript("OnEnter",
 				function()
 					GameTooltip:SetOwner(f, "ANCHOR_BOTTOMRIGHT",f:GetWidth(),f:GetHeight());
 					GameTooltip:SetHyperlink("item:"..k.."..::::::::::::2:6807:"..itemLevel);
 					GameTooltip:Show();
 				end
 			);
-			f:SetScript("OnLeave", 
-				function() 
+			f:SetScript("OnLeave",
+				function()
 					GameTooltip:Hide();
 				end
 			);
@@ -556,17 +543,17 @@ function createItems(frame, armorSelection, itemSlot, dungeonLevel, itemSource)
 				function(self, button)
 					local shift_key = IsShiftKeyDown()
 					if button == "LeftButton" then
-						if shift_key then 
-							itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo("item:"..k.."..::::::::::::2:6807:"..itemLevel) 
+						if shift_key then
+							itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo("item:"..k.."..::::::::::::2:6807:"..itemLevel)
 							SendChatMessage(itemLink)
 						end
 					end
 				end
 			);
-		end 
+		end
 		dungeonCount[v[3]] = dungeonCount[v[3]]+1
 	end
-	
+
 	itemsInitialized = true;
 end
 
@@ -589,8 +576,8 @@ function initFrames()
 		frame:RegisterForDrag("LeftButton");
 		frame:SetScript("OnDragStart", frame.StartMoving);
 		frame:SetScript("OnDragStop", frame.StopMovingOrSizing);
-		frame:SetPoint("CENTER"); 
-		frame:SetWidth(sizex); 
+		frame:SetPoint("CENTER");
+		frame:SetWidth(sizex);
 		frame:SetHeight(sizey);
 
 		local tex = frame:CreateTexture(nil, "BACKGROUND");
@@ -601,23 +588,24 @@ function initFrames()
 		frame.closeButton = CreateFrame("Button", "MPLCloseButton", frame, "UIPanelCloseButton");
 		frame.closeButton:ClearAllPoints();
 		frame.closeButton:SetPoint("TOPRIGHT", frame, "TOPRIGHT", 0, 0);
-		frame.closeButton:SetScript("OnClick", 
-			function() 
+		frame.closeButton:SetScript("OnClick",
+			function()
 				frame:Hide();
 				framesInitialized = false;
 			end
 		);
 		frame.closeButton:SetFrameLevel(4);
-		
+
 		local dropDownWidth = 125;
 		-- Armor type drop down
-		armorText = "Armor Type"
+		--armorText = armorTypes[classArmors[classID][2]];
+		armorText = L["Armor Type"];
 		local armorDropDown = CreateFrame("Frame", "MPLArmorDropDown", frame, "UIDropDownMenuTemplate");
 		armorDropDown:SetPoint("TOPLEFT", frame, "TOPLEFT", 0, -10);
-		UIDropDownMenu_SetWidth(armorDropDown, dropDownWidth); 
+		UIDropDownMenu_SetWidth(armorDropDown, dropDownWidth);
 		UIDropDownMenu_Initialize(armorDropDown, MPLArmorDropDown_Menu);
 		UIDropDownMenu_SetText(armorDropDown, armorText);
-		UIDropDownMenu_Initialize(armorDropDown, 
+		UIDropDownMenu_Initialize(armorDropDown,
 			function(self, level, menuList)
 				local info = UIDropDownMenu_CreateInfo();
 				info.func = self.SetValue;
@@ -636,24 +624,24 @@ function initFrames()
 		function armorDropDown:SetValue(newValue)
 			armorText = newValue;
 			UIDropDownMenu_SetSelectedValue(armorDropDown, armorText);
-			if armorText ~= "Armor Type" and slotText ~= "Item Slot" and mythicText ~= "Mythic Level" then 
-				createItems(frame, armorText, slotText, tonumber(mythicText), sourceText); 
-			elseif armorText == "Armor Type" and (slotText == "Neck" or slotText == "Back" or slotText == "Finger" or slotText == "Trinket" or slotText == "One-Hand" or slotText == "Off-Hand" or slotText == "Two-Hand" or slotText == "Ranged") and mythicText ~= "Mythic Level" then 
-				createItems(frame, "Cloth", slotText, tonumber(mythicText), sourceText);
+			if armorText ~= L["Armor Type"] and slotText ~= L["Item Slot"] and mythicText ~= L["Mythic Level"] then
+				createItems(frame, armorText, slotText, tonumber(mythicText), sourceText);
+			elseif armorText == L["Armor Type"] and (slotText == L["Neck"] or slotText == L["Back"] or slotText == L["Finger"] or slotText == L["Trinket"] or slotText == L["One-Hand"] or slotText == L["Off-Hand"] or slotText == L["Two-Hand"] or slotText == L["Ranged"]) and mythicText ~= L["Mythic Level"] then
+				createItems(frame, L["Cloth"], slotText, tonumber(mythicText), sourceText);
 			else
 				clearFrames();
 			end
 			CloseDropDownMenus();
 		end
-		
+
 		-- slot drop down
-		slotText = "Item Slot"
+		slotText = L["Item Slot"]
 		local slotDropDown = CreateFrame("Frame", "MPLSlotDropDown", frame, "UIDropDownMenuTemplate");
 		slotDropDown:SetPoint("TOPLEFT", frame, "TOPLEFT", 150, -10);
-		UIDropDownMenu_SetWidth(slotDropDown, dropDownWidth); 
+		UIDropDownMenu_SetWidth(slotDropDown, dropDownWidth);
 		UIDropDownMenu_Initialize(slotDropDown, MPLSlotDropDown_Menu);
 		UIDropDownMenu_SetText(slotDropDown, slotText);
-		UIDropDownMenu_Initialize(slotDropDown, 
+		UIDropDownMenu_Initialize(slotDropDown,
 			function(self, level, menuList)
 				local info = UIDropDownMenu_CreateInfo();
 				info.func = self.SetValue;
@@ -672,24 +660,24 @@ function initFrames()
 		function slotDropDown:SetValue(newValue)
 			slotText = newValue;
 			UIDropDownMenu_SetSelectedValue(slotDropDown, slotText);
-			if armorText ~= "Armor Type" and slotText ~= "Item Slot" and mythicText ~= "Mythic Level" then 
-				createItems(frame, armorText, slotText, tonumber(mythicText), sourceText); 
-			elseif armorText == "Armor Type" and (slotText == "Neck" or slotText == "Back" or slotText == "Finger" or slotText == "Trinket" or slotText == "One-Hand" or slotText == "Off-Hand" or slotText == "Two-Hand" or slotText == "Ranged") and mythicText ~= "Mythic Level" then 
-				createItems(frame, "Cloth", slotText, tonumber(mythicText), sourceText);
+			if armorText ~= L["Armor Type"] and slotText ~= L["Item Slot"] and mythicText ~= L["Mythic Level"] then
+				createItems(frame, armorText, slotText, tonumber(mythicText), sourceText);
+			elseif armorText == L["Armor Type"] and (slotText == L["Neck"] or slotText == L["Back"] or slotText == L["Finger"] or slotText == L["Trinket"] or slotText == L["One-Hand"] or slotText == L["Off-Hand"] or slotText == L["Two-Hand"] or slotText == L["Ranged"]) and mythicText ~= L["Mythic Level"] then
+				createItems(frame, L["Cloth"], slotText, tonumber(mythicText), sourceText);
 			else
 				clearFrames();
 			end
 			CloseDropDownMenus();
 		end
-		
+
 		-- mythic level drop down
-		mythicText = "Mythic Level"
+		mythicText = L["Mythic Level"]
 		local mythicDropDown = CreateFrame("Frame", "MPLMythicDropDown", frame, "UIDropDownMenuTemplate");
 		mythicDropDown:SetPoint("TOPLEFT", frame, "TOPLEFT", 300, -10);
-		UIDropDownMenu_SetWidth(mythicDropDown, dropDownWidth); 
+		UIDropDownMenu_SetWidth(mythicDropDown, dropDownWidth);
 		UIDropDownMenu_Initialize(mythicDropDown, MPLMythicDropDown_Menu);
 		UIDropDownMenu_SetText(mythicDropDown, mythicText);
-		UIDropDownMenu_Initialize(mythicDropDown, 
+		UIDropDownMenu_Initialize(mythicDropDown,
 			function(self, level, menuList)
 				local info = UIDropDownMenu_CreateInfo();
 				info.func = self.SetValue;
@@ -708,24 +696,24 @@ function initFrames()
 		function mythicDropDown:SetValue(newValue)
 			mythicText = newValue;
 			UIDropDownMenu_SetSelectedValue(mythicDropDown, mythicText);
-			if armorText ~= "Armor Type" and slotText ~= "Item Slot" and mythicText ~= "Mythic Level" then 
-				createItems(frame, armorText, slotText, tonumber(mythicText), sourceText); 
-			elseif armorText == "Armor Type" and (slotText == "Neck" or slotText == "Back" or slotText == "Finger" or slotText == "Trinket" or slotText == "One-Hand" or slotText == "Off-Hand" or slotText == "Two-Hand" or slotText == "Ranged") and mythicText ~= "Mythic Level" then 
-				createItems(frame, "Cloth", slotText, tonumber(mythicText), sourceText);
+			if armorText ~= L["Armor Type"] and slotText ~= L["Item Slot"] and mythicText ~= L["Mythic Level"] then
+				createItems(frame, armorText, slotText, tonumber(mythicText), sourceText);
+			elseif armorText == L["Armor Type"] and (slotText == L["Neck"] or slotText == L["Back"] or slotText == L["Finger"] or slotText == L["Trinket"] or slotText == L["One-Hand"] or slotText == L["Off-Hand"] or slotText == L["Two-Hand"] or slotText == L["Ranged"]) and mythicText ~= L["Mythic Level"] then
+				createItems(frame, L["Cloth"], slotText, tonumber(mythicText), sourceText);
 			else
 				clearFrames();
 			end
 			CloseDropDownMenus();
 		end
-		
+
 		-- dungeon or chest drop down
-		sourceText = "Source";
+		sourceText = L["Source"];
 		local sourceDropDown = CreateFrame("Frame", "MPLSourceDropDown", frame, "UIDropDownMenuTemplate");
 		sourceDropDown:SetPoint("TOPLEFT", frame, "TOPLEFT", 450, -10);
-		UIDropDownMenu_SetWidth(sourceDropDown, dropDownWidth); 
+		UIDropDownMenu_SetWidth(sourceDropDown, dropDownWidth);
 		UIDropDownMenu_Initialize(sourceDropDown, MPLSourceDropDown_Menu);
 		UIDropDownMenu_SetText(sourceDropDown, sourceText);
-		UIDropDownMenu_Initialize(sourceDropDown, 
+		UIDropDownMenu_Initialize(sourceDropDown,
 			function(self, level, menuList)
 				local info = UIDropDownMenu_CreateInfo();
 				info.func = self.SetValue;
@@ -744,26 +732,23 @@ function initFrames()
 		function sourceDropDown:SetValue(newValue)
 			sourceText = newValue;
 			UIDropDownMenu_SetSelectedValue(sourceDropDown, sourceText);
-			if armorText ~= "Armor Type" and slotText ~= "Item Slot" and mythicText ~= "Mythic Level" then 
-				createItems(frame, armorText, slotText, tonumber(mythicText), sourceText); 
-			elseif armorText == "Armor Type" and (slotText == "Neck" or slotText == "Back" or slotText == "Finger" or slotText == "Trinket" or slotText == "One-Hand" or slotText == "Off-Hand" or slotText == "Two-Hand" or slotText == "Ranged") and mythicText ~= "Mythic Level" then 
-				createItems(frame, "Cloth", slotText, tonumber(mythicText), sourceText);
+			if armorText ~= L["Armor Type"] and slotText ~= L["Item Slot"] and mythicText ~= L["Mythic Level"] then
+				createItems(frame, armorText, slotText, tonumber(mythicText), sourceText);
+			elseif armorText == L["Armor Type"] and (slotText == L["Neck"] or slotText == L["Back"] or slotText == L["Finger"] or slotText == L["Trinket"] or slotText == L["One-Hand"] or slotText == L["Off-Hand"] or slotText == L["Two-Hand"] or slotText == L["Ranged"]) and mythicText ~= L["Mythic Level"] then
+				createItems(frame, L["Cloth"], slotText, tonumber(mythicText), sourceText);
 			else
 				clearFrames();
 			end
 			CloseDropDownMenus();
 		end
-		
+
 		-- Dungeon names
 		createDungeonText(frame);
-		
+
 		-- Item icons
-		if mythicText ~= "Mythic Level" then 
+		if mythicText ~= L["Mythic Level"] then
 			createItems(frame, 15);
 		end
-	
 		framesInitialized = true;
 	end
-	
-	
 end

@@ -6,4 +6,6 @@
 ## SavedVariables: MythicPlusLootDB
 
 libs\load_libs.xml
+init.lua
+locales\_locales.xml
 MythicPlusLoot.lua
