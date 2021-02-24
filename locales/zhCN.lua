@@ -29,7 +29,7 @@ L["Two-Hand"] = "双手"
 L["Ranged"] = "远程"
 
 -- Source list
-L["Dungeon Drop"] = "地城掉落"
+L["Dungeon Drop"] = "地下城掉落"
 L["Weekly Vault"] = "每周宝库"
 
 -- Dungeons
