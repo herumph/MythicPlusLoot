@@ -1,6 +1,10 @@
 local AddonName, MPL = ...;
 local L = MPL.L or {}
 
+-- Options
+L["Enable Minimap Button"] = "Enable Minimap Button"
+L["If the Minimap Button is enabled"] = "If the Minimap Button is enabled"
+
 -- Armor type
 L["Cloth"] = "Cloth"
 L["Leather"] = "Leather"

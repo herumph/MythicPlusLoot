@@ -24,14 +24,41 @@ local defaultSavedVars = {
 	}
 }
 
+-- Options menu
+function MPL:RegisterOptions()
+    MPL.blizzardOptionsMenuTable = {
+        name = "Mythic Plus Loot",
+        type = 'group',
+        args = {
+            enable = {
+                type = 'toggle',
+                name = L["Enable Minimap Button"],
+                desc = L["If the Minimap Button is enabled"],
+                get = function() return not db.minimap.hide end,
+                set = function(_, newValue)
+                    db.minimap.hide = not newValue
+                    if not db.minimap.hide then
+                        LDBI:Show("MythicPlusLoot")
+                    else
+                        LDBI:Hide("MythicPlusLoot")
+                    end
+                end,
+                order = 1,
+                width = "full",
+            },
+        }
+    }
+	LibStub("AceConfigRegistry-3.0"):RegisterOptionsTable("MythicPlusLoot", MPL.blizzardOptionsMenuTable)
+	self.blizzardOptionsMenu = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("MythicPlusLoot", "MythicPlusLoot")
+end
+
 -- DB stuff and minimap button
 MythicPlusLoot = LibStub("AceAddon-3.0"):NewAddon("MythicPlusLootDB")
+db = LibStub("AceDB-3.0"):New("MythicPlusLootDB", defaultSavedVars, true)
 function MythicPlusLoot:OnInitialize()
-  self.db = LibStub("AceDB-3.0"):New("MythicPlusLootDB", defaultSavedVars, true)
-  
   local LDB = LibStub("LibDataBroker-1.1", true)
 	local LDBIcon = LDB and LibStub("LibDBIcon-1.0", true)
-	local db;
+	--local db;
 
 	if LDB then
 		local minimapButton = LDB:NewDataObject("MythicPlusLoot", {
@@ -39,10 +66,12 @@ function MythicPlusLoot:OnInitialize()
 			text = "MythicPlusLoot",
 			icon = "Interface\\AddOns\\MythicPlusLoot\\textures\\icon",
 			OnClick = function(button, buttonPressed)
-				if not framesInitialized then
-					initFrames();
-				else
-					closeMainFrame();
+				if buttonPressed then
+					if not framesInitialized then
+						initFrames();
+					else
+						closeMainFrame();
+					end
 				end
 			end,
 			OnTooltipShow = function(tooltip)
@@ -54,7 +83,11 @@ function MythicPlusLoot:OnInitialize()
 		db = LibStub("AceDB-3.0"):New("MythicPlusLootDB", defaultSavedVars).global
 		LDBIcon:Register("MythicPlusLoot", minimapButton, db.minimap)
 	end
-	LDBIcon:Refresh("MythicPlusLoot", db.minimap)
+	if not db.minimap.hide then
+		LDBIcon:Refresh("MythicPlusLoot", db.minimap)
+	end
+	
+	MPL:RegisterOptions()
 end
 
 local iLevelListDrop = {
@@ -162,7 +195,7 @@ local dungeonItems = {
 	[178754] = {13, 5, 1},
 	[178755] = {4, 5, 1},
 	[178756] = {10, 1, 1},
-	[175757] = {7, 2, 1},
+	[178757] = {7, 2, 1},
 	[178759] = {1, 1, 1},
 	[178760] = {1, 2, 1},
 	[178761] = {9, 1, 1},
@@ -306,7 +339,7 @@ local dungeonItems = {
 	[180108] = {9, 2, 6},
 	[180109] = {8, 1, 6},
 	[180110] = {8, 3, 6},
-	[180111] = {9, 2, 6},
+	[180111] = {8, 2, 6},
 	[180112] = {16, 5, 6},
 	[180113] = {6, 4, 6},
 	[180114] = {6, 3, 6},
@@ -326,7 +359,7 @@ local dungeonItems = {
 	[178736] = {11, 5, 7},
 	[178737] = {13, 5, 7},
 	[178738] = {1, 3, 7},
-	[178739] = {9, 3, 7},
+	[178739] = {9, 4, 7},
 	[178740] = {3, 1, 7},
 	[178741] = {6, 2, 7},
 	[178742] = {12, 5, 7},
