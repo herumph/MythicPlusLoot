@@ -105,7 +105,12 @@ local iLevelListDrop = {
     [12] = 207,
     [13] = 207,
     [14] = 207,
-    [15] = 210
+    [15] = 210,
+	[16] = 213,
+	[17] = 216,
+	[18] = 220,
+	[19] = 223,
+	[20] = 226
 }
 
 local iLevelListChest = {
@@ -152,6 +157,29 @@ local gearSlots = {
 	[16] = L["Ranged"],
 }
 
+local mythicLabels = {
+	[1] = L["M0/Valor 1"],
+    [2] = L["M+2/Valor 2"],
+    [3] = L["M+3/Valor 3"],
+    [4] = L["M+4/Valor 4"],
+    [5] = L["M+5/Valor 4"],
+    [6] = L["M+6/Valor 5"],
+    [7] = L["M+7/Valor 6"],
+    [8] = L["M+8/Valor 6"],
+    [9] = L["M+9/Valor 6"],
+    [10] = L["M+10/Valor 7"],
+    [11] = L["M+11/Valor 7"],
+    [12] = L["M+12/Valor 8"],
+	[13] = L["M+13/Valor 8"],
+    [14] = L["M+14/Valor 8"],
+    [15] = L["M+15/Valor 9"],
+	[16] = L["Valor 10"],
+	[17] = L["Valor 11"],
+	[18] = L["Valor 12"],
+	[19] = L["Great Vault M+12/13"],
+	[20] = L["Great Vault M+14/15"]
+}
+
 local mythicLevels = {
 	[1] = "0",
     [2] = "+2",
@@ -168,6 +196,11 @@ local mythicLevels = {
 	[13] = "+13",
     [14] = "+14",
     [15] = "+15",
+	[16] = "+16",
+	[17] = "+17",
+	[18] = "+18",
+	[19] = "+19",
+	[20] = "+20"
 }
 
 local sourceList = {
@@ -248,6 +281,7 @@ local dungeonItems = {
 	[178812] = {1, 4, 3},
 	[178813] = {5, 1, 3},
 	[178814] = {5, 4, 3},
+	[178815] = {5, 3, 3},
 	[178816] = {1, 3, 3},
 	[178817] = {1, 2, 3},
 	[178818] = {9, 4, 3},
@@ -714,8 +748,8 @@ function initFrames()
 			function(self, level, menuList)
 				local info = UIDropDownMenu_CreateInfo();
 				info.func = self.SetValue;
-				for i=1,15 do
-					info.text = mythicLevels[i];
+				for i=1,20 do
+					info.text = mythicLabels[i];
 					info.menuList = i;
 					info.hasArrow = false;
 					info.value = mythicLevels[i];
@@ -741,7 +775,7 @@ function initFrames()
 
 		-- dungeon or chest drop down
 		sourceText = L["Source"];
-		local sourceDropDown = CreateFrame("Frame", "MPLSourceDropDown", frame, "UIDropDownMenuTemplate");
+		--[[local sourceDropDown = CreateFrame("Frame", "MPLSourceDropDown", frame, "UIDropDownMenuTemplate");
 		sourceDropDown:SetPoint("TOPLEFT", frame, "TOPLEFT", 450, -10);
 		UIDropDownMenu_SetWidth(sourceDropDown, dropDownWidth);
 		UIDropDownMenu_Initialize(sourceDropDown, MPLSourceDropDown_Menu);
@@ -773,7 +807,7 @@ function initFrames()
 				clearFrames();
 			end
 			CloseDropDownMenus();
-		end
+		end--]]
 
 		-- Dungeon names
 		createDungeonText(frame);
