@@ -92,25 +92,26 @@ end
 
 local iLevelListDrop = {
     [1] = 210,
-    [2] = 213,
-    [3] = 216,
-    [4] = 220,
+    [2] = 210,
+    [3] = 213,
+    [4] = 216,
     [5] = 220,
     [6] = 223,
     [7] = 223,
     [8] = 226,
     [9] = 226,
-    [10] = 230,
-    [11] = 230,
+    [10] = 229,
+    [11] = 229,
     [12] = 233,
     [13] = 233,
-    [14] = 233,
+    [14] = 236,
     [15] = 236,
 	[16] = 239,
 	[17] = 242,
-	[18] = 245,
-	[19] = 248,
-	[20] = 252
+	[18] = 246,
+	[19] = 246,
+	[20] = 249,
+	[21] = 252
 }
 
 local armorTypes = {
@@ -141,25 +142,26 @@ local gearSlots = {
 
 local mythicLabels = {
 	[1] = L["M0/Valor 1"],
-    [2] = L["M+2/Valor 2"],
-    [3] = L["M+3/Valor 3"],
-    [4] = L["M+4/Valor 4"],
+    [2] = L["M+2/Valor 1"],
+    [3] = L["M+3/Valor 2"],
+    [4] = L["M+4/Valor 3"],
     [5] = L["M+5/Valor 4"],
     [6] = L["M+6/Valor 5"],
-    [7] = L["M+7/Valor 6"],
+    [7] = L["M+7/Valor 5"],
     [8] = L["M+8/Valor 6"],
     [9] = L["M+9/Valor 6"],
     [10] = L["M+10/Valor 7"],
     [11] = L["M+11/Valor 7"],
     [12] = L["M+12/Valor 8"],
 	[13] = L["M+13/Valor 8"],
-    [14] = L["M+14/Valor 8"],
+    [14] = L["M+14/Valor 9"],
     [15] = L["M+15/Valor 9"],
 	[16] = L["Valor 10"],
 	[17] = L["Valor 11"],
 	[18] = L["Valor 12"],
 	[19] = L["Great Vault M+12/13"],
-	[20] = L["Great Vault M+14/15"]
+	[20] = L["Great Vault M+14"],
+	[21] = L["Great Vault M+15"]
 }
 
 local mythicLevels = {
@@ -182,7 +184,8 @@ local mythicLevels = {
 	[17] = "+17",
 	[18] = "+18",
 	[19] = "+19",
-	[20] = "+20"
+	[20] = "+20",
+	[21] = "+21"
 }
 
 local sourceList = {
@@ -730,7 +733,7 @@ function initFrames()
 			function(self, level, menuList)
 				local info = UIDropDownMenu_CreateInfo();
 				info.func = self.SetValue;
-				for i=1,20 do
+				for i=1,21 do
 					info.text = mythicLabels[i];
 					info.menuList = i;
 					info.hasArrow = false;
