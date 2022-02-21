@@ -42,6 +42,8 @@ L["Sanguine Depths"] = "Sanguine Depths"
 L["Spires of Ascension"] = "Spires of Ascension"
 L["The Necrotic Wake"] = "The Necrotic Wake"
 L["Theater of Pain"] = "Theater of Pain"
+L["Tazavesh: Streets of Wonder"] = "Tazavesh: Streets of Wonder"
+L["Tazavesh: So'Leah's Gambit"] = "Tazavesh: So'Leah's Gambit"
 
 -- General
 L["Item Slot"] = "Item Slot"

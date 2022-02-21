@@ -1,7 +1,7 @@
 local AddonName, MPL = ...;
 local L = MPL.L or {}
-local sizex = 650;
-local sizey = 555;
+local sizex = 700;
+local sizey = 650;
 
 local frame;
 local framesInitialized;
@@ -91,27 +91,27 @@ function MythicPlusLoot:OnInitialize()
 end
 
 local iLevelListDrop = {
-    [1] = 210,
-    [2] = 210,
-    [3] = 213,
-    [4] = 216,
-    [5] = 220,
-    [6] = 223,
-    [7] = 223,
-    [8] = 226,
-    [9] = 226,
-    [10] = 229,
-    [11] = 229,
-    [12] = 233,
-    [13] = 233,
-    [14] = 236,
-    [15] = 236,
-	[16] = 239,
-	[17] = 242,
-	[18] = 246,
-	[19] = 246,
-	[20] = 249,
-	[21] = 252
+    [1] = 236,
+    [2] = 236,
+    [3] = 239,
+    [4] = 242,
+    [5] = 246,
+    [6] = 249,
+    [7] = 249,
+    [8] = 252,
+    [9] = 252,
+    [10] = 255,
+    [11] = 255,
+    [12] = 259,
+    [13] = 259,
+    [14] = 262,
+    [15] = 262,
+	[16] = 265,
+	[17] = 268,
+	[18] = 272,
+	[19] = 272,
+	[20] = 275,
+	[21] = 278
 }
 
 local armorTypes = {
@@ -188,11 +188,6 @@ local mythicLevels = {
 	[21] = "+21"
 }
 
-local sourceList = {
-	[1] = L["Dungeon Drop"],
-    [2] = L["Weekly Vault"],
-}
-
 local dungeonList = {
 	[1] = L["Plaguefall"],
 	[2] = L["De Other Side"],
@@ -202,6 +197,8 @@ local dungeonList = {
 	[6] = L["Spires of Ascension"],
 	[7] = L["The Necrotic Wake"],
 	[8] = L["Theater of Pain"],
+	[9] = L["Tazavesh: Streets of Wonder"],
+	[10] = L["Tazavesh: So'Leah's Gambit"]
 }
 
 local dungeonItems = {
@@ -428,7 +425,65 @@ local dungeonItems = {
 	[178869] = {11, 5, 8},
 	[178870] = {11, 5, 8},
 	[178871] = {11, 5, 8},
-	[178872] = {11, 5, 8}
+	[178872] = {11, 5, 8},
+	-- Tazavesh: Streets of Wonder
+	[185793] = {7, 1, 9},
+	[185791] = {7, 2, 9},
+	[185815] = {6, 4, 9},
+	[185816] = {6, 3, 9},
+	[185824] = {13, 5, 9},
+	[185780] = {13, 5, 9},
+	[185792] = {7, 4, 9},
+	[185814] = {6, 1, 9},
+	[185777] = {13, 5, 9},
+	[185794] = {7, 3, 9},
+	[185821] = {13, 5, 9},
+	[185840] = {11, 5, 9},
+	[185809] = {8, 2, 9},
+	[185817] = {6, 2, 9},
+	[185808] = {8, 3, 9},
+	[185844] = {12, 5, 9},
+	[185787] = {10, 4, 9},
+	[185846] = {12, 5, 9},
+	[185811] = {14, 5, 9},
+	[185807] = {8, 1, 9},
+	[185812] = {14, 5, 9},
+	[185802] = {3, 2, 9},
+	[185804] = {3, 1, 9},
+	[185806] = {8, 4, 9},
+	[185842] = {2, 5, 9},
+	[185789] = {10, 3, 9},
+	[185783] = {16, 5, 9},
+	[185843] = {4, 5, 9},
+	[185798] = {9, 4, 9},
+	[185782] = {5, 1, 9},
+	[185786] = {5, 2, 9},
+	[185800] = {9, 3, 9},
+	[185778] = {13, 5, 9},
+	[185836] = {12, 5, 9},
+	-- Tazavesh: So'Leah's Gambit
+	[185781] = {4, 5, 10},
+	[185788] = {10, 1, 10},
+	[185805] = {3, 3, 10},
+	[185803] = {3, 4, 10},
+	[185790] = {10, 2, 10},
+	[185810] = {15, 5, 10},
+	[185779] = {15, 5, 10},
+	[185820] = {2, 5, 10},
+	[185776] = {1, 4, 10},
+	[185797] = {1, 2, 10},
+	[185796] = {1, 3, 10},
+	[185795] = {1, 1, 10},
+	[185841] = {13, 5, 10},
+	[185823] = {13, 5, 10},
+	[185801] = {9, 2, 10},
+	[185785] = {5, 3, 10},
+	[185819] = {13, 5, 10},
+	[185799] = {9, 1, 10},
+	[185784] = {5, 4, 10},
+	[185813] = {11, 5, 10},
+	[185818] = {12, 5, 10},
+	[185822] = {15, 5, 10},
 }
 
 function MyDropDownMenu_OnLoad()
@@ -447,14 +502,14 @@ function createDungeonText(frame)
 		local justifyH;
 		local offsetX;
 		local offsetY;
-		if i<5 then
+		if i<=#dungeonList/2 then
 			justifyH = "RIGHT"
 			offsetX = xStart
 			offsetY = yStart+(i-1)*yOffset
 		else
 			justifyH = "LEFT"
 			offsetX = xStart+xSecondColumn
-			offsetY = yStart+(i-5)*yOffset
+			offsetY = yStart+(i-#dungeonList/2-1)*yOffset
 		end
 
 		local dungeonString = frame.CreateFontString(frame, "OVERLAY", "GameTooltipText");
@@ -503,7 +558,9 @@ function createItems(frame, armorSelection, itemSlot, dungeonLevel, itemSource)
 		[5] = 0,
 		[6] = 0,
 		[7] = 0,
-		[8] = 0
+		[8] = 0,
+		[9] = 0,
+		[10] = 0,
 	}
 
 	-- If a new option is selected, delete the old frames
@@ -523,24 +580,32 @@ function createItems(frame, armorSelection, itemSlot, dungeonLevel, itemSource)
 	end
 
 	-- Dungeon drop or weekly vault; default to dungeon drop
-	local itemLevel;
+	local itemLevelStart;
 	if itemSource == L["Weekly Vault"] and dungeonLevel ~= 0 then
-		itemLevel = iLevelListChest[dungeonLevel];
+		itemLevelStart = iLevelListChest[dungeonLevel];
 	elseif dungeonLevel ~= 0 then
-		itemLevel = iLevelListDrop[dungeonLevel];
+		itemLevelStart = iLevelListDrop[dungeonLevel];
 	else
-		itemLevel = iLevelListDrop[1];
+		itemLevelStart = iLevelListDrop[1];
 	end
 
 	local xSize, ySize = 32, 32;
-	itemLevel = 1498+(itemLevel-184);
 	for k,v in pairs(itemList) do
+		-- Tazavesh bullshit
+		local itemLevel
+		if v[3] < 9 then
+			itemLevel = 1498+(itemLevelStart-184);
+			print(v[3])
+		else
+			itemLevel = 1498+(itemLevelStart-181);
+		end
+
 		local itemIcon = GetItemIcon(k);
 		local f = CreateFrame("Frame", "MPLItemIcon"..k, frame);
 		tinsert(framepool, f);
 		f:SetSize(xSize, ySize);
 
-		if v[3]<5 then
+		if v[3]<=#dungeonList/2 then
 			if v[3] == lastDungeon then
 				i = i+1;
 			else
@@ -575,7 +640,7 @@ function createItems(frame, armorSelection, itemSlot, dungeonLevel, itemSource)
 			);
 			-- Second column
 		else
-			f:SetPoint("TOPLEFT", frame, "TOPLEFT", xItemStart+xSecondColumn+xSize/4+dungeonCount[v[3]]*xSize*1.5, yItemStart+(v[3]-5)*yItemOffset/2-ySize+ySize/4);
+			f:SetPoint("TOPLEFT", frame, "TOPLEFT", xItemStart+xSecondColumn+xSize/4+dungeonCount[v[3]]*xSize*1.5, yItemStart+(v[3]-#dungeonList/2-1)*yItemOffset/2-ySize+ySize/4);
 			f.tex = f:CreateTexture();
 			f.tex:SetAllPoints(f);
 			f.tex:SetTexture(itemIcon);
@@ -661,7 +726,7 @@ function initFrames()
 			function(self, level, menuList)
 				local info = UIDropDownMenu_CreateInfo();
 				info.func = self.SetValue;
-				for i=1,4 do
+				for i=1,#armorTypes do
 					info.text = armorTypes[i];
 					info.menuList = i;
 					info.hasArrow = false;
@@ -697,7 +762,7 @@ function initFrames()
 			function(self, level, menuList)
 				local info = UIDropDownMenu_CreateInfo();
 				info.func = self.SetValue;
-				for i=1,16 do
+				for i=1,#gearSlots do
 					info.text = gearSlots[i];
 					info.menuList = i;
 					info.hasArrow = false;
@@ -733,7 +798,7 @@ function initFrames()
 			function(self, level, menuList)
 				local info = UIDropDownMenu_CreateInfo();
 				info.func = self.SetValue;
-				for i=1,21 do
+				for i=1,#mythicLevels do
 					info.text = mythicLabels[i];
 					info.menuList = i;
 					info.hasArrow = false;
@@ -760,39 +825,6 @@ function initFrames()
 
 		-- dungeon or chest drop down
 		sourceText = L["Source"];
-		--[[local sourceDropDown = CreateFrame("Frame", "MPLSourceDropDown", frame, "UIDropDownMenuTemplate");
-		sourceDropDown:SetPoint("TOPLEFT", frame, "TOPLEFT", 450, -10);
-		UIDropDownMenu_SetWidth(sourceDropDown, dropDownWidth);
-		UIDropDownMenu_Initialize(sourceDropDown, MPLSourceDropDown_Menu);
-		UIDropDownMenu_SetText(sourceDropDown, sourceText);
-		UIDropDownMenu_Initialize(sourceDropDown,
-			function(self, level, menuList)
-				local info = UIDropDownMenu_CreateInfo();
-				info.func = self.SetValue;
-				for i=1,2 do
-					info.text = sourceList[i];
-					info.menuList = i;
-					info.hasArrow = false;
-					info.value = sourceList[i];
-					info.arg1 = sourceList[i];
-					info.checked = false;
-					UIDropDownMenu_AddButton(info);
-				end
-			end
-		);
-		-- Implement the function to change the value
-		function sourceDropDown:SetValue(newValue)
-			sourceText = newValue;
-			UIDropDownMenu_SetSelectedValue(sourceDropDown, sourceText);
-			if armorText ~= L["Armor Type"] and slotText ~= L["Item Slot"] and mythicText ~= L["Mythic Level"] then
-				createItems(frame, armorText, slotText, tonumber(mythicText), sourceText);
-			elseif armorText == L["Armor Type"] and (slotText == L["Neck"] or slotText == L["Back"] or slotText == L["Finger"] or slotText == L["Trinket"] or slotText == L["One-Hand"] or slotText == L["Off-Hand"] or slotText == L["Two-Hand"] or slotText == L["Ranged"]) and mythicText ~= L["Mythic Level"] then
-				createItems(frame, L["Cloth"], slotText, tonumber(mythicText), sourceText);
-			else
-				clearFrames();
-			end
-			CloseDropDownMenus();
-		end--]]
 
 		-- Dungeon names
 		createDungeonText(frame);

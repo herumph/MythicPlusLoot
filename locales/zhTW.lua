@@ -45,6 +45,8 @@ L["Sanguine Depths"] = "血紅深淵"
 L["Spires of Ascension"] = "晉升之巔"
 L["The Necrotic Wake"] = "死靈戰地"
 L["Theater of Pain"] = "苦痛劇場"
+L["Tazavesh: Streets of Wonder"] = "Tazavesh: Streets of Wonder"
+L["Tazavesh: So'Leah's Gambit"] = "Tazavesh: So'Leah's Gambit"
 
 -- General
 L["Item Slot"] = "物品部位"

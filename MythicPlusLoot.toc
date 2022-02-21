@@ -1,8 +1,8 @@
-## Interface: 90100
+## Interface: 90200
 ## Title: MythicPlusLoot
 ## Author: Scott Davis
-## Version: 0.3.0
-## Notes: Gear scaling for m+ dungeons.
+## Version: 0.4.0
+## Notes: Gear scaling for M+ dungeons.
 ## SavedVariables: MythicPlusLootDB
 
 libs\load_libs.xml
