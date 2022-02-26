@@ -587,6 +587,13 @@ end
 
 local xStart, yStart, yOffset, xSecondColumn = 75, -100, -110, 325;
 function createDungeonText(frame)
+	local favString = frame.CreateFontString(frame, "OVERLAY", "GameTooltipText");
+	favString:SetFontObject("GameFontNormalLarge");
+	favString:SetJustifyH("RIGHT");
+	favString:SetPoint("TOPLEFT", frame, "TOPLEFT", 75, -50);
+	favString:SetTextColor(1, 1, 1, 1);
+	favString:SetText("Right click on item to favorite.");
+
 	for i=1,#dungeonList do
 		local justifyH;
 		local offsetX;
