@@ -54,7 +54,7 @@ L["Item Slot"] = "Тип предмета"
 L["Mythic Level"] = "Уровень мифика"
 L["Source"] = "Источник"
 L["Armor Type"] = "Тип брони"
-L["Click to toggle AddOn Window"] = "Нажмите, чтобы переключить окно аддона"
+L["Click to toggle AddOn Window"] = "[ПКМ], чтобы открыть MythicPlusLoot"
 
 -- Mythic Labels
 L["M0/Valor 1"] = "M0/Доблесть 1"
