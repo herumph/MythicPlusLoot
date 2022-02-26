@@ -31,6 +31,7 @@ L["One-Hand"] = "Одноручное"
 L["Off-Hand"] = "Левая рука"
 L["Two-Hand"] = "Двуручное"
 L["Ranged"] = "Дальний бой"
+L["Favorites"] = "Избранное"
 
 -- Source list
 L["Dungeon Drop"] = "Подземелье"
@@ -53,7 +54,7 @@ L["Item Slot"] = "Тип предмета"
 L["Mythic Level"] = "Уровень мифика"
 L["Source"] = "Источник"
 L["Armor Type"] = "Тип брони"
-L["Click to toggle AddOn Window"] = "Нажмите, чтобы переключить отображение окна дополнения"
+L["Click to toggle AddOn Window"] = "Нажмите, чтобы переключить окно аддона"
 
 -- Mythic Labels
 L["M0/Valor 1"] = "M0/Доблесть 1"
