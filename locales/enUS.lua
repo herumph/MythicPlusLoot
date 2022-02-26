@@ -28,6 +28,7 @@ L["One-Hand"] = "One-Hand"
 L["Off-Hand"] = "Off-Hand"
 L["Two-Hand"] = "Two-Hand"
 L["Ranged"] = "Ranged"
+L["Favorites"] = "Favorites"
 
 -- Source list
 L["Dungeon Drop"] = "Dungeon Drop"
