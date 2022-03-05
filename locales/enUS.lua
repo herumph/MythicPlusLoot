@@ -74,3 +74,7 @@ L["Valor 12"] = "Valor 12"
 L["Great Vault M+12/13"] = "Great Vault M+12/13"
 L["Great Vault M+14"] = "Great Vault M+14"
 L["Great Vault M+15"] = "Great Vault M+15"
+
+-- Other
+L["Right click on items to favorite\nRight click on favorite items to add a role"] = "Right click on items to favorite\nRight click on favorite items to add a role"
+L["The profile %s doesn't exist"] = "The profile %s doesn't exist"
