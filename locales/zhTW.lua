@@ -76,3 +76,6 @@ L["Valor 12"] = "Valor 12"
 L["Great Vault M+12/13"] = "Great Vault M+12/13"
 L["Great Vault M+14"] = "Great Vault M+14"
 L["Great Vault M+15"] = "Great Vault M+15"
+
+L["Right click on items to favorite"] = "Right click on items to favorite"
+L["Click to toggle AddOn Window"] = "Click to toggle AddOn Window"
