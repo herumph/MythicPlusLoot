@@ -979,6 +979,7 @@ function initFrames()
 		frame:SetPoint("CENTER");
 		frame:SetWidth(sizex);
 		frame:SetHeight(sizey);
+		frame:SetFrameStrata("DIALOG");
 
 		local tex = frame:CreateTexture(nil, "BACKGROUND");
 		tex:SetAllPoints();
