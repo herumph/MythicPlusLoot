@@ -38,16 +38,15 @@ L["Dungeon Drop"] = "Подземелье"
 L["Weekly Vault"] = "Недельный сундук"
 
 -- Dungeons
-L["Plaguefall"] = "Чумные каскады"
-L["De Other Side"] = "Та Сторона"
-L["Halls of Atonement"] = "Чертоги Покаяния"
-L["Mists of Tirna Scithe"] = "Туманы Тирна Скитта"
-L["Sanguine Depths"] = "Кровавые катакомбы"
-L["Spires of Ascension"] = "Шпили Перерождения"
-L["The Necrotic Wake"] = "Смертельная Тризна"
-L["Theater of Pain"] = "Театр Боли"
 L["Tazavesh: Streets of Wonder"] = "Тазавеш: Улицы Чудес"
 L["Tazavesh: So'Leah's Gambit"] = "Тазавеш: Гамбит Со'леи"
+L["Mechagon: Junkyard"] = "Mechagon: Junkyard"
+L["Mechagon: Workshop"] = "Mechagon Workshop"
+L["Karazhan: Lower"] = "Karazhan: Lower"
+L["Karazhan: Upper"] = "Karazhan: Upper"
+L["Grimrail Depot"] = "Grimrail Depot"
+L["Iron Docks"] = "Iron Dock"
+L["Grimrail Depot / Iron Docks"] = "Grimrail Depot / Iron Docks"
 
 -- General
 L["Item Slot"] = "Тип предмета"

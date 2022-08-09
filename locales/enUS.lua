@@ -35,16 +35,16 @@ L["Dungeon Drop"] = "Dungeon Drop"
 L["Weekly Vault"] = "Weekly Vault"
 
 -- Dungeons
-L["Plaguefall"] = "Plaguefall"
-L["De Other Side"] = "De Other Side"
-L["Halls of Atonement"] = "Halls of Atonement"
-L["Mists of Tirna Scithe"] = "Mists of Tirna Scithe"
-L["Sanguine Depths"] = "Sanguine Depths"
-L["Spires of Ascension"] = "Spires of Ascension"
-L["The Necrotic Wake"] = "The Necrotic Wake"
-L["Theater of Pain"] = "Theater of Pain"
 L["Tazavesh: Streets of Wonder"] = "Tazavesh: Streets of Wonder"
 L["Tazavesh: So'Leah's Gambit"] = "Tazavesh: So'Leah's Gambit"
+L["Mechagon: Junkyard"] = "Mechagon: Junkyard"
+L["Mechagon: Workshop"] = "Mechagon Workshop"
+L["Karazhan: Lower"] = "Karazhan: Lower"
+L["Karazhan: Upper"] = "Karazhan: Upper"
+L["Grimrail Depot"] = "Grimrail Depot"
+L["Iron Docks"] = "Iron Docks"
+L["Grimrail Depot / Iron Docks"] = "Grimrail Depot / Iron Docks"
+
 
 -- General
 L["Item Slot"] = "Item Slot"

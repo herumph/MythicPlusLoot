@@ -39,16 +39,15 @@ L["Weekly Vault"] = "금고 보상"
 L["Valor Upgrade"] = "용맹 강화"
 
 -- Dungeons
-L["Plaguefall"] = "역병 몰락지 (Plaguefall)"
-L["De Other Side"] = "저편 (De Other Side)"
-L["Halls of Atonement"] = "속죄의 전당 (Halls of Atonement)"
-L["Mists of Tirna Scithe"] = "티르너 사이드의 안개 (Mists of Tirna Scithe)"
-L["Sanguine Depths"] = "핏빛 심연 (Sanguine Depths)"
-L["Spires of Ascension"] = "승천의 첨탑 (Spires of Ascension)"
-L["The Necrotic Wake"] = "죽음의 상흔 (The Necrotic Wake)"
-L["Theater of Pain"] = "고통의 투기장 (Theater of Pain)"
 L["Tazavesh: Streets of Wonder"] = "타자베쉬: 경이의 거리 (Streets of Wonder)"
 L["Tazavesh: So'Leah's Gambit"] = "타자베쉬: 소레아의 승부수 (So'Leah's Gambit)"
+L["Mechagon: Junkyard"] = "Mechagon: Junkyard"
+L["Mechagon: Workshop"] = "Mechagon Workshop"
+L["Karazhan: Lower"] = "Karazhan: Lower"
+L["Karazhan: Upper"] = "Karazhan: Upper"
+L["Grimrail Depot"] = "Grimrail Depot"
+L["Iron Docks"] = "Iron Dock"
+L["Grimrail Depot / Iron Docks"] = "Grimrail Depot / Iron Docks"
 
 -- General
 L["Item Slot"] = "아이템 슬롯"

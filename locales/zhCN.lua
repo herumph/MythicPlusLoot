@@ -37,16 +37,15 @@ L["Dungeon Drop"] = "地下城掉落"
 L["Weekly Vault"] = "每周宝库"
 
 -- Dungeons
-L["Plaguefall"] = "凋魂之殇"
-L["De Other Side"] = "彼界"
-L["Halls of Atonement"] = "赎罪大厅"
-L["Mists of Tirna Scithe"] = "塞兹仙林的迷雾"
-L["Sanguine Depths"] = "赤红深渊"
-L["Spires of Ascension"] = "晋升高塔"
-L["The Necrotic Wake"] = "通灵战潮"
-L["Theater of Pain"] = "伤逝剧场"
 L["Tazavesh: Streets of Wonder"] = "Tazavesh: Streets of Wonder"
 L["Tazavesh: So'Leah's Gambit"] = "Tazavesh: So'Leah's Gambit"
+L["Mechagon: Junkyard"] = "Mechagon: Junkyard"
+L["Mechagon: Workshop"] = "Mechagon Workshop"
+L["Karazhan: Lower"] = "Karazhan: Lower"
+L["Karazhan: Upper"] = "Karazhan: Upper"
+L["Grimrail Depot"] = "Grimrail Depot"
+L["Iron Docks"] = "Iron Dock"
+L["Grimrail Depot / Iron Docks"] = "Grimrail Depot / Iron Docks"
 
 -- General
 L["Item Slot"] = "物品部位"
