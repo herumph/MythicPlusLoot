@@ -565,7 +565,7 @@ function createDungeonText(frame)
 	favString:SetJustifyH("RIGHT");
 	favString:SetPoint("TOPLEFT", frame, "TOPLEFT", 75, -50);
 	favString:SetTextColor(1, 1, 1, 1);
-	favString:SetText("Right click on item to favorite.");
+	favString:SetText(L["Right click on item to favorite"]);
 
 	for i=1,#dungeonList do
 		local justifyH;
