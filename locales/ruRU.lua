@@ -46,7 +46,6 @@ L["Karazhan: Lower"] = "Каражан: Нижний ярус"
 L["Karazhan: Upper"] = "Каражан: Верхний ярус"
 L["Grimrail Depot"] = "Депо Мрачных Путей"
 L["Iron Docks"] = "Железные доки"
-L["Grimrail Depot / Iron Docks"] = "Депо Мрачных Путей / Железные доки"
 
 -- General
 L["Item Slot"] = "Тип предмета"
@@ -77,5 +76,5 @@ L["Great Vault M+12/13"] = "Великое Хранилище M+12/13"
 L["Great Vault M+14"] = "Великое Хранилище M+14"
 L["Great Vault M+15"] = "Великое Хранилище M+15"
 
-L["Right click on items to favorite"] = "[ПКМ] - на элементы, чтобы добавить их в избранное"
+L["Right click on items to favorite"] = "[ПКМ] - на предметы, чтобы добавить их в избранное"
 L["Click to toggle AddOn Window"] = "[ЛКМ] - открыть MythicPlusLoot"
