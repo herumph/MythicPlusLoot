@@ -45,7 +45,6 @@ L["Karazhan: Lower"] = "Karazhan: Lower"
 L["Karazhan: Upper"] = "Karazhan: Upper"
 L["Grimrail Depot"] = "Grimrail Depot"
 L["Iron Docks"] = "Iron Dock"
-L["Grimrail Depot / Iron Docks"] = "Grimrail Depot / Iron Docks"
 
 -- General
 L["Item Slot"] = "物品部位"
