@@ -287,6 +287,17 @@ local dungeonList = {
 	[8] = L["Iron Docks"]
 }
 
+local dungeonDisplayIndex = {
+	[1] = 1,
+	[2] = 5,
+	[3] = 2,
+	[4] = 4,
+	[5] = 6,
+	[6] = 3,
+	[7] = 7,
+	[8] = 8
+}
+
 local dungeonItems = {
 	-- [item number]: {slot, armorType, dungeon}
 	-- Tazavesh: Streets of Wonder
@@ -586,8 +597,17 @@ function createDungeonText(frame)
 		dungeonString:SetJustifyH(justifyH);
 		dungeonString:SetPoint("TOPLEFT", frame, "TOPLEFT", offsetX, offsetY);
 		dungeonString:SetTextColor(1, 1, 1, 1);
-		dungeonString:SetText(dungeonList[i]);
+		dungeonString:SetText(getDungeonText(i));
 	end
+end
+
+function getDungeonText(i)
+	local index = indexTable(dungeonDisplayIndex)
+	return dungeonList[index[i]]
+end
+
+function getDungeonDisplayIndex(i)
+	return dungeonDisplayIndex[i]
 end
 
 function getIndex(inputTable, value)
@@ -894,15 +914,16 @@ function createItems(frame, armorSelection, itemSlot, dungeonLevel, itemSource)
 			dungeonCount[v[3]][2], dungeonCount[v[3]][3] = dungeonCount[v[3]][1], dungeonCount[v[3]][3]+50
 		end
 
+		local v3 = getDungeonDisplayIndex(v[3])
 		local x, y;
 		-- First column
-		if v[3]<=#dungeonList/2 then
+		if v3<=#dungeonList/2 then
 			x = xItemStart+xSize/4+(dungeonCount[v[3]][1] - dungeonCount[v[3]][2])*xSize*1.5;
-			y = (yItemStart - dungeonCount[v[3]][3])+(v[3]-1)*yItemOffset/2-ySize+ySize/4;
+			y = (yItemStart - dungeonCount[v[3]][3])+(v3-1)*yItemOffset/2-ySize+ySize/4;
 		-- Second column
 		else
 			x = xItemStart+xSecondColumn+xSize/4+(dungeonCount[v[3]][1] - dungeonCount[v[3]][2])*xSize*1.5;
-			y = (yItemStart -  dungeonCount[v[3]][3])+(v[3]-#dungeonList/2-1)*yItemOffset/2-ySize+ySize/4;
+			y = (yItemStart -  dungeonCount[v[3]][3])+(v3-#dungeonList/2-1)*yItemOffset/2-ySize+ySize/4;
 		end
 
 		f:SetPoint("TOPLEFT", frame, "TOPLEFT", x, y);
