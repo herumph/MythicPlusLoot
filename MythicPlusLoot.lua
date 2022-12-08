@@ -610,7 +610,9 @@ function initFrames()
 	local dropDownWidth = 125;
 
 	-- class drop down
-	local playerClass = UnitClass("player");
+	local localClass, playerClass = UnitClass("player");
+	-- get rid of the capitals
+	playerClass = string.sub(string.upper(playerClass), 1, 1)..string.sub(string.lower(playerClass), 2, -1);
 	local classText = db.profile.class or playerClass;
 	local specText = db.profile.spec or nil;
 	local classDropDown = CreateFrame("Frame", "MPLClassDropDown", frame, "UIDropDownMenuTemplate");
