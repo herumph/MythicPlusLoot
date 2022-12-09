@@ -32,7 +32,7 @@ local function get_ilvls()
         [25] = 415,
         [26] = 418,
         [27] = 418,
-        [28] = 421
+        [28] = 421,
     }
 
     return ilvls
@@ -93,7 +93,7 @@ local function get_mythic_labels()
         [25] = L["Great Vault +17/Valor 13"],
         [26] = L["Great Vault +18"],
         [27] = L["Great Vault +19"],
-        [28] = L["Great Vault +20"]
+        [28] = L["Great Vault +20"],
     }
 
     return mythicLabels
@@ -122,7 +122,7 @@ local function get_mythic_levels()
         [18] = "+18",
         [19] = "+19",
         [20] = "+20",
-        [21] = "+21"
+        [21] = "+21",
     }
 
     return mythicLevels
@@ -138,7 +138,7 @@ local function get_dungeons()
         ["Halls of Valor"] = 5,
         ["Court of Stars"] = 6,
         ["Temple of the Jade Serpent"] = 7,
-        ["Shadowmoon Burial Grounds"] = 8
+        ["Shadowmoon Burial Grounds"] = 8,
     }
 
     return dungeonTable
@@ -160,7 +160,7 @@ local function get_classes()
         [11] = L["Monk"],
         [12] = L["Druid"],
         [13] = L["Demon Hunter"],
-        [14] = L["Evoker"]
+        [14] = L["Evoker"],
     }
 
     return classTable
@@ -169,69 +169,69 @@ MPL_tables.get_classes = get_classes
 
 local function get_specs()
     local specTable = {
-        ["Warrior"] = {
-            [1] = "Arms", 
-            [2] = "Fury", 
-            [3] = "Protection"
+        [L["Warrior"]] = {
+            [1] = L["Arms"], 
+            [2] = L["Fury"], 
+            [3] = L["Protection"]
         },
-        ["Paladin"] = {
-            [1] = "Holy",
-            [2] = "Protection",
-            [3] = "Retribution"
+        [L["Paladin"]] = {
+            [1] = L["Holy"],
+            [2] = L["Protection"],
+            [3] = L["Retribution"]
         },
-        ["Hunter"] = {
-            [1] = "Beast Mastery",
-            [2] = "Marksmanship",
-            [3] = "Survival"
+        [L["Hunter"]] = {
+            [1] = L["Beast Mastery"],
+            [2] = L["Marksmanship"],
+            [3] = L["Survival"]
         },
-        ["Rogue"] = {
-            [1] = "Assassination",
-            [2] = "Outlaw",
-            [3] = "Subtlety"
+        [L["Rogue"]] = {
+            [1] = L["Assassination"],
+            [2] = L["Outlaw"],
+            [3] = L["Subtlety"]
         },
-        ["Priest"] = {
-            [1] = "Discipline",
-            [2] = "Holy",
-            [3] = "Shadow"
+        [L["Priest"]] = {
+            [1] = L["Discipline"],
+            [2] = L["Holy"],
+            [3] = L["Shadow"]
         },
-        ["Death Knight"] = {
-            [1] = "Blood",
-            [2] = "Frost",
-            [3] = "Unholy"
+        [L["Death Knight"]] = {
+            [1] = L["Blood"],
+            [2] = L["Frost"],
+            [3] = L["Unholy"]
         },
-        ["Shaman"] = {
-            [1] = "Elemental",
-            [2] = "Enhancement",
-            [3] = "Restoration"
+        [L["Shaman"]] = {
+            [1] = L["Elemental"],
+            [2] = L["Enhancement"],
+            [3] = L["Restoration"]
         },
-        ["Mage"] = {
-            [1] = "Arcane",
-            [2] = "Fire",
-            [3] = "Frost"
+        [L["Mage"]] = {
+            [1] = L["Arcane"],
+            [2] = L["Fire"],
+            [3] = L["Frost"]
         },
-        ["Warlock"] = {
-            [1] = "Affliction",
-            [2] = "Demonology",
-            [3] = "Destruction"
+        [L["Warlock"]] = {
+            [1] = L["Affliction"],
+            [2] = L["Demonology"],
+            [3] = L["Destruction"]
         },
-        ["Monk"] = {
-            [1] = "Brewmaster",
-            [2] = "Mistweaver",
-            [3] = "Windwalker"
+        [L["Monk"]] = {
+            [1] = L["Brewmaster"],
+            [2] = L["Mistweaver"],
+            [3] = L["Windwalker"]
         },
-        ["Druid"] = {
-            [1] = "Balance",
-            [2] = "Feral",
-            [3] = "Guardian",
-            [4] = "Restoration"
+        [L["Druid"]] = {
+            [1] = L["Balance"],
+            [2] = L["Feral"],
+            [3] = L["Guardian"],
+            [4] = L["Restoration"]
         },
-        ["Demon Hunter"] = {
-            [1] = "Havoc",
-            [2] = "Vengeance"
+        [L["Demon Hunter"]] = {
+            [1] = L["Havoc"],
+            [2] = L["Vengeance"]
         },
-        ["Evoker"] = {
-            [1] = "Devastation",
-            [2] = "Preservation"
+        [L["Evoker"]] = {
+            [1] = L["Devastation"],
+            [2] = L["Preservation"]
         }
     }
 
@@ -241,8 +241,8 @@ MPL_tables.get_specs = get_specs
 
 function get_items()
     local dungeonItems = {
-        ["Mage"] = {
-            ["Arcane"] = {
+        [L["Mage"]] = {
+            [L["Arcane"]] = {
                 [193691] = {
                     ["armor"] = "Cloth",
                     ["slot"] = "Waist",
@@ -516,6 +516,11 @@ function get_items()
                 [139280] = {
                     ["armor"] = "Cloth",
                     ["slot"] = "Feet",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201997] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
                     ["dungeon"] = "Halls of Valor",
                 },
                 [134308] = {
@@ -944,7 +949,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Fire"] = {
+            [L["Fire"]] = {
                 [193691] = {
                     ["armor"] = "Cloth",
                     ["slot"] = "Waist",
@@ -1218,6 +1223,11 @@ function get_items()
                 [139280] = {
                     ["armor"] = "Cloth",
                     ["slot"] = "Feet",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201997] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
                     ["dungeon"] = "Halls of Valor",
                 },
                 [134308] = {
@@ -1646,7 +1656,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Frost"] = {
+            [L["Frost"]] = {
                 [193691] = {
                     ["armor"] = "Cloth",
                     ["slot"] = "Waist",
@@ -1922,2112 +1932,9 @@ function get_items()
                     ["slot"] = "Feet",
                     ["dungeon"] = "Halls of Valor",
                 },
-                [134308] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134310] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134392] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134415] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134432] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Shoulder",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134529] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134542] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137483] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137484] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137485] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137486] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137487] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137488] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137496] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Legs",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [139299] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [109763] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109764] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109765] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109766] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109767] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109768] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109769] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109770] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109780] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109781] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109784] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109785] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109786] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109796] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109797] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109824] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109825] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109826] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109827] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109828] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109844] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109845] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109846] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109847] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109861] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109864] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109865] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109866] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109867] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109881] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109899] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109900] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109901] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109902] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109903] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109907] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109908] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109909] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109910] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109911] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109925] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109926] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109927] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109954] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109955] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109956] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109957] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109958] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109959] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109960] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109961] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109970] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109971] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109972] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109973] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109974] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [110007] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [110035] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Off-Hand",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [110039] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [122240] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [80864] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [80866] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [80874] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81123] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81124] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81127] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81128] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81129] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81131] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81132] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-            },
-        },
-        ["Warlock"] = {
-            ["Affliction"] = {
-                [193691] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193748] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193750] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Legs",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193755] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193757] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193761] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193762] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193763] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193766] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Off-Hand",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193676] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193677] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193678] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193683] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193687] = {
+                [201997] = {
                     ["armor"] = "None",
                     ["slot"] = "One-Hand",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193690] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Shoulder",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193696] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193697] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193699] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193628] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193629] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193632] = {
-                    ["armor"] = "None",
-                    ["slot"] = "One-Hand",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193633] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193635] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193639] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193641] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193647] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193648] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193703] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193707] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193708] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193709] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Off-Hand",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193710] = {
-                    ["armor"] = "None",
-                    ["slot"] = "One-Hand",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193712] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193713] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193718] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193720] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [133609] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133610] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Legs",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133613] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133633] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133638] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133639] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133641] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133642] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133646] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133679] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133765] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133767] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [134216] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [134217] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [134219] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [134222] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [136774] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [136775] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Shoulder",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [139280] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [134308] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134310] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134392] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134415] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134432] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Shoulder",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134529] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134542] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137483] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137484] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137485] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137486] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137487] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137488] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137496] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Legs",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [139299] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [109763] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109764] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109765] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109766] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109767] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109768] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109769] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109770] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109780] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109781] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109784] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109785] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109786] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109796] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109797] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109824] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109825] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109826] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109827] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109828] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109844] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109845] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109846] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109847] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109861] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109864] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109865] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109866] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109867] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109881] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109899] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109900] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109901] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109902] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109903] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109907] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109908] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109909] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109910] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109911] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109925] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109926] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109927] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109954] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109955] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109956] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109957] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109958] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109959] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109960] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109961] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109970] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109971] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109972] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109973] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109974] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [110007] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [110035] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Off-Hand",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [110039] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [122240] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [80864] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [80866] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [80874] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81123] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81124] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81127] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81128] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81129] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81131] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81132] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-            },
-            ["Demonology"] = {
-                [193691] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193748] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193750] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Legs",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193755] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193757] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193761] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193762] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193763] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193766] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Off-Hand",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193676] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193677] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193678] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193683] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193687] = {
-                    ["armor"] = "None",
-                    ["slot"] = "One-Hand",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193690] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Shoulder",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193696] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193697] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193699] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193628] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193629] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193632] = {
-                    ["armor"] = "None",
-                    ["slot"] = "One-Hand",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193633] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193635] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193639] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193641] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193647] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193648] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193703] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193707] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193708] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193709] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Off-Hand",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193710] = {
-                    ["armor"] = "None",
-                    ["slot"] = "One-Hand",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193712] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193713] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193718] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193720] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [133609] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133610] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Legs",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133613] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133633] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133638] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133639] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133641] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133642] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133646] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133679] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133765] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133767] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [134216] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [134217] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [134219] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [134222] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [136774] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [136775] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Shoulder",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [139280] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [134308] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134310] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134392] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134415] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134432] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Shoulder",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134529] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [134542] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137483] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137484] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137485] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137486] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137487] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137488] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [137496] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Legs",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [139299] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Court of Stars",
-                },
-                [109763] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109764] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109765] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109766] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109767] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109768] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109769] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109770] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109780] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109781] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109784] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109785] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109786] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109796] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109797] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109824] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109825] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109826] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109827] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109828] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109844] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109845] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109846] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109847] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109861] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109864] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109865] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109866] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109867] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109881] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109899] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109900] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109901] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109902] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109903] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109907] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109908] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109909] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109910] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109911] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109925] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109926] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109927] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109954] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109955] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109956] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109957] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109958] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109959] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109960] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109961] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109970] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109971] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109972] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109973] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [109974] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [110007] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [110035] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Off-Hand",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [110039] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [122240] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Shadowmoon Burial Grounds",
-                },
-                [80864] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [80866] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [80874] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81123] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81124] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81127] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81128] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81129] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81131] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-                [81132] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Temple of the Jade Serpent",
-                },
-            },
-            ["Destruction"] = {
-                [193691] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193748] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193750] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Legs",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193755] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193757] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193761] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193762] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193763] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193766] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Off-Hand",
-                    ["dungeon"] = "Ruby Life Pools",
-                },
-                [193676] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193677] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193678] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193683] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193687] = {
-                    ["armor"] = "None",
-                    ["slot"] = "One-Hand",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193690] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Shoulder",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193696] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193697] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193699] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "The Nokhud Offensive",
-                },
-                [193628] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193629] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193632] = {
-                    ["armor"] = "None",
-                    ["slot"] = "One-Hand",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193633] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193635] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193639] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193641] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193647] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193648] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "The Azure Vault",
-                },
-                [193703] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193707] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Two-Hand",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193708] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193709] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Off-Hand",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193710] = {
-                    ["armor"] = "None",
-                    ["slot"] = "One-Hand",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193712] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193713] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193718] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [193720] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Algeth'ar Academy",
-                },
-                [133609] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133610] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Legs",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133613] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Waist",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133633] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133638] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133639] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133641] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133642] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133646] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Trinket",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133679] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Finger",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133765] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Back",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [133767] = {
-                    ["armor"] = "None",
-                    ["slot"] = "Neck",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [134216] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Head",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [134217] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Hands",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [134219] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Chest",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [134222] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Wrist",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [136774] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [136775] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Shoulder",
-                    ["dungeon"] = "Halls of Valor",
-                },
-                [139280] = {
-                    ["armor"] = "Cloth",
-                    ["slot"] = "Feet",
                     ["dungeon"] = "Halls of Valor",
                 },
                 [134308] = {
@@ -4457,8 +2364,2131 @@ function get_items()
                 },
             },
         },
-        ["Priest"] = {
-            ["Discipline"] = {
+        [L["Warlock"]] = {
+            [L["Affliction"]] = {
+                [193691] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193748] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193750] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Legs",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193755] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193757] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193761] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193762] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193763] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193766] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Off-Hand",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193676] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193677] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193678] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193683] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193687] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193690] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Shoulder",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193696] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193697] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193699] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193628] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193629] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193632] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193633] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193635] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193639] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193641] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193647] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193648] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193703] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193707] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193708] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193709] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Off-Hand",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193710] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193712] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193713] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193718] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193720] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [133609] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133610] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Legs",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133613] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133633] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133638] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133639] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133641] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133642] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133646] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133679] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133765] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133767] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [134216] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [134217] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [134219] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [134222] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [136774] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [136775] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Shoulder",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [139280] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201997] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [134308] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134310] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134392] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134415] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134432] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Shoulder",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134529] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134542] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137483] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137484] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137485] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137486] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137487] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137488] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137496] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Legs",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [139299] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [109763] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109764] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109765] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109766] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109767] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109768] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109769] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109770] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109780] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109781] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109784] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109785] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109786] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109796] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109797] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109824] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109825] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109826] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109827] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109828] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109844] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109845] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109846] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109847] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109861] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109864] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109865] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109866] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109867] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109881] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109899] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109900] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109901] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109902] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109903] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109907] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109908] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109909] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109910] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109911] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109925] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109926] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109927] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109954] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109955] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109956] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109957] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109958] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109959] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109960] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109961] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109970] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109971] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109972] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109973] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109974] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [110007] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [110035] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Off-Hand",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [110039] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [122240] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [80864] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [80866] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [80874] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81123] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81124] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81127] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81128] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81129] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81131] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81132] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+            },
+            [L["Demonology"]] = {
+                [193691] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193748] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193750] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Legs",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193755] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193757] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193761] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193762] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193763] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193766] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Off-Hand",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193676] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193677] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193678] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193683] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193687] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193690] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Shoulder",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193696] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193697] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193699] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193628] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193629] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193632] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193633] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193635] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193639] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193641] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193647] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193648] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193703] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193707] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193708] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193709] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Off-Hand",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193710] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193712] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193713] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193718] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193720] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [133609] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133610] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Legs",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133613] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133633] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133638] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133639] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133641] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133642] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133646] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133679] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133765] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133767] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [134216] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [134217] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [134219] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [134222] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [136774] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [136775] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Shoulder",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [139280] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201997] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [134308] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134310] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134392] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134415] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134432] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Shoulder",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134529] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134542] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137483] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137484] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137485] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137486] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137487] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137488] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137496] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Legs",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [139299] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [109763] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109764] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109765] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109766] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109767] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109768] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109769] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109770] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109780] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109781] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109784] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109785] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109786] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109796] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109797] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109824] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109825] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109826] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109827] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109828] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109844] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109845] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109846] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109847] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109861] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109864] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109865] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109866] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109867] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109881] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109899] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109900] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109901] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109902] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109903] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109907] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109908] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109909] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109910] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109911] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109925] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109926] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109927] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109954] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109955] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109956] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109957] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109958] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109959] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109960] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109961] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109970] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109971] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109972] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109973] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109974] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [110007] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [110035] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Off-Hand",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [110039] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [122240] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [80864] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [80866] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [80874] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81123] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81124] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81127] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81128] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81129] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81131] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81132] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+            },
+            [L["Destruction"]] = {
+                [193691] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193748] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193750] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Legs",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193755] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193757] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193761] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193762] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193763] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193766] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Off-Hand",
+                    ["dungeon"] = "Ruby Life Pools",
+                },
+                [193676] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193677] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193678] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193683] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193687] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193690] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Shoulder",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193696] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193697] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193699] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "The Nokhud Offensive",
+                },
+                [193628] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193629] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193632] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193633] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193635] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193639] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193641] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193647] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193648] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "The Azure Vault",
+                },
+                [193703] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193707] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193708] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193709] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Off-Hand",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193710] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193712] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193713] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193718] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [193720] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Algeth'ar Academy",
+                },
+                [133609] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133610] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Legs",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133613] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133633] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133638] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133639] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133641] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133642] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133646] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133679] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133765] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [133767] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [134216] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [134217] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [134219] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [134222] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [136774] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [136775] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Shoulder",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [139280] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201997] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [134308] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134310] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134392] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134415] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134432] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Shoulder",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134529] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [134542] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137483] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137484] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137485] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137486] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137487] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137488] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [137496] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Legs",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [139299] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [109763] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109764] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109765] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109766] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109767] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109768] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109769] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109770] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109780] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109781] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109784] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109785] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109786] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109796] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109797] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109824] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109825] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109826] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109827] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109828] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109844] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109845] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109846] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109847] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109861] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109864] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109865] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109866] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109867] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109881] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Wrist",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109899] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109900] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109901] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109902] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109903] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Chest",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109907] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109908] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109909] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109910] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109911] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109925] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109926] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109927] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109954] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109955] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109956] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109957] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109958] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109959] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109960] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109961] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109970] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109971] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109972] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109973] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [109974] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Head",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [110007] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Trinket",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [110035] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Off-Hand",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [110039] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [122240] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Shadowmoon Burial Grounds",
+                },
+                [80864] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Waist",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [80866] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [80874] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81123] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81124] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81127] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Feet",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81128] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Finger",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81129] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Back",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81131] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Neck",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+                [81132] = {
+                    ["armor"] = "Cloth",
+                    ["slot"] = "Hands",
+                    ["dungeon"] = "Temple of the Jade Serpent",
+                },
+            },
+        },
+        [L["Priest"]] = {
+            [L["Discipline"]] = {
                 [193691] = {
                     ["armor"] = "Cloth",
                     ["slot"] = "Waist",
@@ -4722,6 +4752,11 @@ function get_items()
                 [139280] = {
                     ["armor"] = "Cloth",
                     ["slot"] = "Feet",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201997] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
                     ["dungeon"] = "Halls of Valor",
                 },
                 [134308] = {
@@ -5155,7 +5190,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Holy"] = {
+            [L["Holy"]] = {
                 [193691] = {
                     ["armor"] = "Cloth",
                     ["slot"] = "Waist",
@@ -5419,6 +5454,11 @@ function get_items()
                 [139280] = {
                     ["armor"] = "Cloth",
                     ["slot"] = "Feet",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201997] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
                     ["dungeon"] = "Halls of Valor",
                 },
                 [134308] = {
@@ -5852,7 +5892,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Shadow"] = {
+            [L["Shadow"]] = {
                 [193691] = {
                     ["armor"] = "Cloth",
                     ["slot"] = "Waist",
@@ -6116,6 +6156,11 @@ function get_items()
                 [139280] = {
                     ["armor"] = "Cloth",
                     ["slot"] = "Feet",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201997] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
                     ["dungeon"] = "Halls of Valor",
                 },
                 [134308] = {
@@ -6550,8 +6595,8 @@ function get_items()
                 },
             },
         },
-        ["Druid"] = {
-            ["Balance"] = {
+        [L["Druid"]] = {
+            [L["Balance"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -6820,6 +6865,11 @@ function get_items()
                 [139281] = {
                     ["armor"] = "Leather",
                     ["slot"] = "Head",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201997] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
                     ["dungeon"] = "Halls of Valor",
                 },
                 [134280] = {
@@ -7253,7 +7303,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Feral"] = {
+            [L["Feral"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -7567,6 +7617,11 @@ function get_items()
                 [139299] = {
                     ["armor"] = "None",
                     ["slot"] = "Head",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [201995] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
                     ["dungeon"] = "Court of Stars",
                 },
                 [109759] = {
@@ -7900,7 +7955,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Guardian"] = {
+            [L["Guardian"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -8214,6 +8269,11 @@ function get_items()
                 [139299] = {
                     ["armor"] = "None",
                     ["slot"] = "Head",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [201995] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
                     ["dungeon"] = "Court of Stars",
                 },
                 [109759] = {
@@ -8547,7 +8607,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Restoration"] = {
+            [L["Restoration"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -8816,6 +8876,11 @@ function get_items()
                 [139281] = {
                     ["armor"] = "Leather",
                     ["slot"] = "Head",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201997] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
                     ["dungeon"] = "Halls of Valor",
                 },
                 [134280] = {
@@ -9250,8 +9315,8 @@ function get_items()
                 },
             },
         },
-        ["Rogue"] = {
-            ["Assassination"] = {
+        [L["Rogue"]] = {
+            [L["Assassination"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -9495,6 +9560,11 @@ function get_items()
                 [139281] = {
                     ["armor"] = "Leather",
                     ["slot"] = "Head",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201998] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
                     ["dungeon"] = "Halls of Valor",
                 },
                 [134280] = {
@@ -9898,7 +9968,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Outlaw"] = {
+            [L["Outlaw"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -10550,7 +10620,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Subtlety"] = {
+            [L["Subtlety"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -10794,6 +10864,11 @@ function get_items()
                 [139281] = {
                     ["armor"] = "Leather",
                     ["slot"] = "Head",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201998] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
                     ["dungeon"] = "Halls of Valor",
                 },
                 [134280] = {
@@ -11198,8 +11273,8 @@ function get_items()
                 },
             },
         },
-        ["Monk"] = {
-            ["Brewmaster"] = {
+        [L["Monk"]] = {
+            [L["Brewmaster"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -11528,6 +11603,11 @@ function get_items()
                 [139299] = {
                     ["armor"] = "None",
                     ["slot"] = "Head",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [201995] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
                     ["dungeon"] = "Court of Stars",
                 },
                 [109759] = {
@@ -11861,7 +11941,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Windwalker"] = {
+            [L["Windwalker"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -12190,6 +12270,11 @@ function get_items()
                 [139299] = {
                     ["armor"] = "None",
                     ["slot"] = "Head",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [201995] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
                     ["dungeon"] = "Court of Stars",
                 },
                 [109759] = {
@@ -12523,7 +12608,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Mistweaver"] = {
+            [L["Mistweaver"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -13231,8 +13316,8 @@ function get_items()
                 },
             },
         },
-        ["Demon Hunter"] = {
-            ["Havoc"] = {
+        [L["Demon Hunter"]] = {
+            [L["Havoc"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -13889,7 +13974,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Vengeance"] = {
+            [L["Vengeance"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -14007,8 +14092,8 @@ function get_items()
                 },
             },
         },
-        ["Hunter"] = {
-            ["Beast Mastery"] = {
+        [L["Hunter"]] = {
+            [L["Beast Mastery"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -14312,6 +14397,11 @@ function get_items()
                 [139299] = {
                     ["armor"] = "None",
                     ["slot"] = "Head",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [201994] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Ranged",
                     ["dungeon"] = "Court of Stars",
                 },
                 [109759] = {
@@ -14655,7 +14745,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Marksmanship"] = {
+            [L["Marksmanship"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -14959,6 +15049,11 @@ function get_items()
                 [139299] = {
                     ["armor"] = "None",
                     ["slot"] = "Head",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [201994] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Ranged",
                     ["dungeon"] = "Court of Stars",
                 },
                 [109759] = {
@@ -15302,7 +15397,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Survival"] = {
+            [L["Survival"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -15613,6 +15708,11 @@ function get_items()
                     ["slot"] = "Head",
                     ["dungeon"] = "Court of Stars",
                 },
+                [201995] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Two-Hand",
+                    ["dungeon"] = "Court of Stars",
+                },
                 [109759] = {
                     ["armor"] = "None",
                     ["slot"] = "Finger",
@@ -15945,8 +16045,8 @@ function get_items()
                 },
             },
         },
-        ["Shaman"] = {
-            ["Elemental"] = {
+        [L["Shaman"]] = {
+            [L["Elemental"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -16220,6 +16320,16 @@ function get_items()
                 [139282] = {
                     ["armor"] = "Mail",
                     ["slot"] = "Wrist",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201997] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201999] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Shield",
                     ["dungeon"] = "Halls of Valor",
                 },
                 [134296] = {
@@ -16653,7 +16763,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Enhancement"] = {
+            [L["Enhancement"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -17295,7 +17405,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Restoration"] = {
+            [L["Restoration"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -17569,6 +17679,16 @@ function get_items()
                 [139282] = {
                     ["armor"] = "Mail",
                     ["slot"] = "Wrist",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201997] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201999] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Shield",
                     ["dungeon"] = "Halls of Valor",
                 },
                 [134296] = {
@@ -18003,8 +18123,8 @@ function get_items()
                 },
             },
         },
-        ["Evoker"] = {
-            ["Devastation"] = {
+        [L["Evoker"]] = {
+            [L["Devastation"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -18278,6 +18398,11 @@ function get_items()
                 [139282] = {
                     ["armor"] = "Mail",
                     ["slot"] = "Wrist",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201997] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
                     ["dungeon"] = "Halls of Valor",
                 },
                 [134296] = {
@@ -18711,7 +18836,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Preservation"] = {
+            [L["Preservation"]] = {
                 [193748] = {
                     ["armor"] = "None",
                     ["slot"] = "Trinket",
@@ -18985,6 +19110,11 @@ function get_items()
                 [139282] = {
                     ["armor"] = "Mail",
                     ["slot"] = "Wrist",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201997] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
                     ["dungeon"] = "Halls of Valor",
                 },
                 [134296] = {
@@ -19419,8 +19549,8 @@ function get_items()
                 },
             },
         },
-        ["Paladin"] = {
-            ["Holy"] = {
+        [L["Paladin"]] = {
+            [L["Holy"]] = {
                 [193728] = {
                     ["armor"] = "Plate",
                     ["slot"] = "Feet",
@@ -19684,6 +19814,11 @@ function get_items()
                 [139283] = {
                     ["armor"] = "Plate",
                     ["slot"] = "Wrist",
+                    ["dungeon"] = "Halls of Valor",
+                },
+                [201999] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Shield",
                     ["dungeon"] = "Halls of Valor",
                 },
                 [134268] = {
@@ -20107,7 +20242,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Protection"] = {
+            [L["Protection"]] = {
                 [193728] = {
                     ["armor"] = "Plate",
                     ["slot"] = "Feet",
@@ -20373,6 +20508,11 @@ function get_items()
                     ["slot"] = "Wrist",
                     ["dungeon"] = "Halls of Valor",
                 },
+                [201999] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Shield",
+                    ["dungeon"] = "Halls of Valor",
+                },
                 [134268] = {
                     ["armor"] = "Plate",
                     ["slot"] = "Hands",
@@ -20436,6 +20576,11 @@ function get_items()
                 [139299] = {
                     ["armor"] = "None",
                     ["slot"] = "Head",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [201996] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
                     ["dungeon"] = "Court of Stars",
                 },
                 [109771] = {
@@ -20774,7 +20919,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Retrobution"] = {
+            [L["Retribution"]] = {
                 [193728] = {
                     ["armor"] = "Plate",
                     ["slot"] = "Feet",
@@ -21437,8 +21582,8 @@ function get_items()
                 },
             },
         },
-        ["Warrior"] = {
-            ["Arms"] = {
+        [L["Warrior"]] = {
+            [L["Arms"]] = {
                 [193728] = {
                     ["armor"] = "Plate",
                     ["slot"] = "Feet",
@@ -22100,7 +22245,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Fury"] = {
+            [L["Fury"]] = {
                 [193728] = {
                     ["armor"] = "Plate",
                     ["slot"] = "Feet",
@@ -22434,6 +22579,11 @@ function get_items()
                 [139299] = {
                     ["armor"] = "None",
                     ["slot"] = "Head",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [201996] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
                     ["dungeon"] = "Court of Stars",
                 },
                 [109771] = {
@@ -22777,7 +22927,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Protection"] = {
+            [L["Protection"]] = {
                 [193728] = {
                     ["armor"] = "Plate",
                     ["slot"] = "Feet",
@@ -23043,6 +23193,11 @@ function get_items()
                     ["slot"] = "Wrist",
                     ["dungeon"] = "Halls of Valor",
                 },
+                [201999] = {
+                    ["armor"] = "None",
+                    ["slot"] = "Shield",
+                    ["dungeon"] = "Halls of Valor",
+                },
                 [134268] = {
                     ["armor"] = "Plate",
                     ["slot"] = "Hands",
@@ -23106,6 +23261,11 @@ function get_items()
                 [139299] = {
                     ["armor"] = "None",
                     ["slot"] = "Head",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [201996] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
                     ["dungeon"] = "Court of Stars",
                 },
                 [109771] = {
@@ -23445,8 +23605,8 @@ function get_items()
                 },
             },
         },
-        ["Death Knight"] = {
-            ["Blood"] = {
+        [L["Death Knight"]] = {
+            [L["Blood"]] = {
                 [193728] = {
                     ["armor"] = "Plate",
                     ["slot"] = "Feet",
@@ -24108,7 +24268,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Frost"] = {
+            [L["Frost"]] = {
                 [193728] = {
                     ["armor"] = "Plate",
                     ["slot"] = "Feet",
@@ -24442,6 +24602,11 @@ function get_items()
                 [139299] = {
                     ["armor"] = "None",
                     ["slot"] = "Head",
+                    ["dungeon"] = "Court of Stars",
+                },
+                [201996] = {
+                    ["armor"] = "None",
+                    ["slot"] = "One-Hand",
                     ["dungeon"] = "Court of Stars",
                 },
                 [109771] = {
@@ -24785,7 +24950,7 @@ function get_items()
                     ["dungeon"] = "Temple of the Jade Serpent",
                 },
             },
-            ["Unholy"] = {
+            [L["Unholy"]] = {
                 [193728] = {
                     ["armor"] = "Plate",
                     ["slot"] = "Feet",

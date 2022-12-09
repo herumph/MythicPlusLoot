@@ -276,6 +276,11 @@
                 "slot": "Feet",
                 "armor": "Cloth"
             },
+            "201997": {
+                "dungeon": "Halls of Valor",
+                "slot": "One-Hand",
+                "armor": "None"
+            },
             "134308": {
                 "dungeon": "Court of Stars",
                 "slot": "Feet",
@@ -978,6 +983,11 @@
                 "slot": "Feet",
                 "armor": "Cloth"
             },
+            "201997": {
+                "dungeon": "Halls of Valor",
+                "slot": "One-Hand",
+                "armor": "None"
+            },
             "134308": {
                 "dungeon": "Court of Stars",
                 "slot": "Feet",
@@ -1679,6 +1689,11 @@
                 "dungeon": "Halls of Valor",
                 "slot": "Feet",
                 "armor": "Cloth"
+            },
+            "201997": {
+                "dungeon": "Halls of Valor",
+                "slot": "One-Hand",
+                "armor": "None"
             },
             "134308": {
                 "dungeon": "Court of Stars",
@@ -2384,6 +2399,11 @@
                 "slot": "Feet",
                 "armor": "Cloth"
             },
+            "201997": {
+                "dungeon": "Halls of Valor",
+                "slot": "One-Hand",
+                "armor": "None"
+            },
             "134308": {
                 "dungeon": "Court of Stars",
                 "slot": "Feet",
@@ -3085,6 +3105,11 @@
                 "dungeon": "Halls of Valor",
                 "slot": "Feet",
                 "armor": "Cloth"
+            },
+            "201997": {
+                "dungeon": "Halls of Valor",
+                "slot": "One-Hand",
+                "armor": "None"
             },
             "134308": {
                 "dungeon": "Court of Stars",
@@ -3788,6 +3813,11 @@
                 "slot": "Feet",
                 "armor": "Cloth"
             },
+            "201997": {
+                "dungeon": "Halls of Valor",
+                "slot": "One-Hand",
+                "armor": "None"
+            },
             "134308": {
                 "dungeon": "Court of Stars",
                 "slot": "Feet",
@@ -4481,6 +4511,11 @@
                 "dungeon": "Halls of Valor",
                 "slot": "Feet",
                 "armor": "Cloth"
+            },
+            "201997": {
+                "dungeon": "Halls of Valor",
+                "slot": "One-Hand",
+                "armor": "None"
             },
             "134308": {
                 "dungeon": "Court of Stars",
@@ -5179,6 +5214,11 @@
                 "slot": "Feet",
                 "armor": "Cloth"
             },
+            "201997": {
+                "dungeon": "Halls of Valor",
+                "slot": "One-Hand",
+                "armor": "None"
+            },
             "134308": {
                 "dungeon": "Court of Stars",
                 "slot": "Feet",
@@ -5875,6 +5915,11 @@
                 "dungeon": "Halls of Valor",
                 "slot": "Feet",
                 "armor": "Cloth"
+            },
+            "201997": {
+                "dungeon": "Halls of Valor",
+                "slot": "One-Hand",
+                "armor": "None"
             },
             "134308": {
                 "dungeon": "Court of Stars",
@@ -6579,6 +6624,11 @@
                 "dungeon": "Halls of Valor",
                 "slot": "Head",
                 "armor": "Leather"
+            },
+            "201997": {
+                "dungeon": "Halls of Valor",
+                "slot": "One-Hand",
+                "armor": "None"
             },
             "134280": {
                 "dungeon": "Court of Stars",
@@ -7327,6 +7377,11 @@
                 "slot": "Head",
                 "armor": "None"
             },
+            "201995": {
+                "dungeon": "Court of Stars",
+                "slot": "Two-Hand",
+                "armor": "None"
+            },
             "109759": {
                 "dungeon": "Shadowmoon Burial Grounds",
                 "slot": "Finger",
@@ -7974,6 +8029,11 @@
                 "slot": "Head",
                 "armor": "None"
             },
+            "201995": {
+                "dungeon": "Court of Stars",
+                "slot": "Two-Hand",
+                "armor": "None"
+            },
             "109759": {
                 "dungeon": "Shadowmoon Burial Grounds",
                 "slot": "Finger",
@@ -8575,6 +8635,11 @@
                 "dungeon": "Halls of Valor",
                 "slot": "Head",
                 "armor": "Leather"
+            },
+            "201997": {
+                "dungeon": "Halls of Valor",
+                "slot": "One-Hand",
+                "armor": "None"
             },
             "134280": {
                 "dungeon": "Court of Stars",
@@ -9254,6 +9319,11 @@
                 "dungeon": "Halls of Valor",
                 "slot": "Head",
                 "armor": "Leather"
+            },
+            "201998": {
+                "dungeon": "Halls of Valor",
+                "slot": "One-Hand",
+                "armor": "None"
             },
             "134280": {
                 "dungeon": "Court of Stars",
@@ -10554,6 +10624,11 @@
                 "slot": "Head",
                 "armor": "Leather"
             },
+            "201998": {
+                "dungeon": "Halls of Valor",
+                "slot": "One-Hand",
+                "armor": "None"
+            },
             "134280": {
                 "dungeon": "Court of Stars",
                 "slot": "Wrist",
@@ -11288,6 +11363,11 @@
                 "slot": "Head",
                 "armor": "None"
             },
+            "201995": {
+                "dungeon": "Court of Stars",
+                "slot": "Two-Hand",
+                "armor": "None"
+            },
             "109759": {
                 "dungeon": "Shadowmoon Burial Grounds",
                 "slot": "Finger",
@@ -11948,6 +12028,11 @@
             "139299": {
                 "dungeon": "Court of Stars",
                 "slot": "Head",
+                "armor": "None"
+            },
+            "201995": {
+                "dungeon": "Court of Stars",
+                "slot": "Two-Hand",
                 "armor": "None"
             },
             "109759": {
@@ -14072,6 +14157,11 @@
                 "slot": "Head",
                 "armor": "None"
             },
+            "201994": {
+                "dungeon": "Court of Stars",
+                "slot": "Ranged",
+                "armor": "None"
+            },
             "109759": {
                 "dungeon": "Shadowmoon Burial Grounds",
                 "slot": "Finger",
@@ -14717,6 +14807,11 @@
             "139299": {
                 "dungeon": "Court of Stars",
                 "slot": "Head",
+                "armor": "None"
+            },
+            "201994": {
+                "dungeon": "Court of Stars",
+                "slot": "Ranged",
                 "armor": "None"
             },
             "109759": {
@@ -15371,6 +15466,11 @@
                 "slot": "Head",
                 "armor": "None"
             },
+            "201995": {
+                "dungeon": "Court of Stars",
+                "slot": "Two-Hand",
+                "armor": "None"
+            },
             "109759": {
                 "dungeon": "Shadowmoon Burial Grounds",
                 "slot": "Finger",
@@ -15979,6 +16079,16 @@
                 "dungeon": "Halls of Valor",
                 "slot": "Wrist",
                 "armor": "Mail"
+            },
+            "201997": {
+                "dungeon": "Halls of Valor",
+                "slot": "One-Hand",
+                "armor": "None"
+            },
+            "201999": {
+                "dungeon": "Halls of Valor",
+                "slot": "Shield",
+                "armor": "None"
             },
             "134296": {
                 "dungeon": "Court of Stars",
@@ -17329,6 +17439,16 @@
                 "slot": "Wrist",
                 "armor": "Mail"
             },
+            "201997": {
+                "dungeon": "Halls of Valor",
+                "slot": "One-Hand",
+                "armor": "None"
+            },
+            "201999": {
+                "dungeon": "Halls of Valor",
+                "slot": "Shield",
+                "armor": "None"
+            },
             "134296": {
                 "dungeon": "Court of Stars",
                 "slot": "Wrist",
@@ -18038,6 +18158,11 @@
                 "slot": "Wrist",
                 "armor": "Mail"
             },
+            "201997": {
+                "dungeon": "Halls of Valor",
+                "slot": "One-Hand",
+                "armor": "None"
+            },
             "134296": {
                 "dungeon": "Court of Stars",
                 "slot": "Wrist",
@@ -18745,6 +18870,11 @@
                 "slot": "Wrist",
                 "armor": "Mail"
             },
+            "201997": {
+                "dungeon": "Halls of Valor",
+                "slot": "One-Hand",
+                "armor": "None"
+            },
             "134296": {
                 "dungeon": "Court of Stars",
                 "slot": "Wrist",
@@ -19444,6 +19574,11 @@
                 "slot": "Wrist",
                 "armor": "Plate"
             },
+            "201999": {
+                "dungeon": "Halls of Valor",
+                "slot": "Shield",
+                "armor": "None"
+            },
             "134268": {
                 "dungeon": "Court of Stars",
                 "slot": "Hands",
@@ -20131,6 +20266,11 @@
                 "slot": "Wrist",
                 "armor": "Plate"
             },
+            "201999": {
+                "dungeon": "Halls of Valor",
+                "slot": "Shield",
+                "armor": "None"
+            },
             "134268": {
                 "dungeon": "Court of Stars",
                 "slot": "Hands",
@@ -20194,6 +20334,11 @@
             "139299": {
                 "dungeon": "Court of Stars",
                 "slot": "Head",
+                "armor": "None"
+            },
+            "201996": {
+                "dungeon": "Court of Stars",
+                "slot": "One-Hand",
                 "armor": "None"
             },
             "109771": {
@@ -22194,6 +22339,11 @@
                 "slot": "Head",
                 "armor": "None"
             },
+            "201996": {
+                "dungeon": "Court of Stars",
+                "slot": "One-Hand",
+                "armor": "None"
+            },
             "109771": {
                 "dungeon": "Shadowmoon Burial Grounds",
                 "slot": "Finger",
@@ -22801,6 +22951,11 @@
                 "slot": "Wrist",
                 "armor": "Plate"
             },
+            "201999": {
+                "dungeon": "Halls of Valor",
+                "slot": "Shield",
+                "armor": "None"
+            },
             "134268": {
                 "dungeon": "Court of Stars",
                 "slot": "Hands",
@@ -22864,6 +23019,11 @@
             "139299": {
                 "dungeon": "Court of Stars",
                 "slot": "Head",
+                "armor": "None"
+            },
+            "201996": {
+                "dungeon": "Court of Stars",
+                "slot": "One-Hand",
                 "armor": "None"
             },
             "109771": {
@@ -24200,6 +24360,11 @@
             "139299": {
                 "dungeon": "Court of Stars",
                 "slot": "Head",
+                "armor": "None"
+            },
+            "201996": {
+                "dungeon": "Court of Stars",
+                "slot": "One-Hand",
                 "armor": "None"
             },
             "109771": {

@@ -215,7 +215,7 @@ function createDungeonText(frame)
 		dungeonString:SetJustifyH(justifyH);
 		dungeonString:SetPoint("TOPLEFT", frame, "TOPLEFT", offsetX, offsetY);
 		dungeonString:SetTextColor(1, 1, 1, 1);
-		dungeonString:SetText(k);
+		dungeonString:SetText(L[k]);
 	end
 end
 
@@ -408,7 +408,7 @@ function createItems(frame, slotText, mythicLevel, classText, specText)
 	local itemLevelStart = iLevelListDrop[mythicLevel];
 
 	-- create a table of items based on the filters applied
-	if classText ~= "All Classes" then
+	if classText ~= L["All Classes"] then
 		-- class and spec defined
 		if specText then
 			for k,v in pairs(dungeonItems[classText][specText]) do
@@ -433,7 +433,7 @@ function createItems(frame, slotText, mythicLevel, classText, specText)
 	end
 
 	-- favorites
-	local favoriteMode = (slotText == "Favorites") and true or false;
+	local favoriteMode = (slotText == L["Favorites"]) and true or false;
 	local favoriteList = {};
 	if favoriteMode then
 		for k,v in pairs(dungeonItems) do
@@ -460,8 +460,7 @@ function createItems(frame, slotText, mythicLevel, classText, specText)
 	-- display the items
 	local xSize, ySize = 32, 32;
 	for k,v in pairs(trimmedItems) do
-		if (v["slot"] == slotText or slotText == "all") or favoriteMode then
-
+		if (L[v["slot"]] == slotText or slotText == "all") or favoriteMode then
 			local itemLevel
 			if (
 				v["dungeon"] == "Ruby Life Pools" or 
@@ -610,9 +609,7 @@ function initFrames()
 	local dropDownWidth = 125;
 
 	-- class drop down
-	local localClass, playerClass = UnitClass("player");
-	-- get rid of the capitals
-	playerClass = string.sub(string.upper(playerClass), 1, 1)..string.sub(string.lower(playerClass), 2, -1);
+	local playerClass = UnitClass("player")
 	local classText = db.profile.class or playerClass;
 	local specText = db.profile.spec or nil;
 	local classDropDown = CreateFrame("Frame", "MPLClassDropDown", frame, "UIDropDownMenuTemplate");
@@ -623,7 +620,7 @@ function initFrames()
 		function(self, level, menuList)
 			local info = UIDropDownMenu_CreateInfo();
 			if (level or 1) == 1 then
-				info.text = "Class";
+				info.text = L["Class"];
 				info.menuList = i;
 				info.hasArrow = true;
 				info.checked = false;
@@ -813,7 +810,7 @@ function initFrames()
 		profileText = newValue;
 		UIDropDownMenu_SetSelectedValue(profileDropDown, profileText);
 
-		classText = db.profile.class or "All Classes";
+		classText = db.profile.class or L["All Classes"];
 		specText = db.profile.spec or nil;
 		slotText = (db.profile.slot > 0) and gearSlots[db.profile.slot] or L["Item Slot"];
 		mythicText = (db.profile.mythicLevel > 0) and mythicLabels[db.profile.mythicLevel] or L["Mythic Level"];
