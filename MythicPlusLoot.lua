@@ -612,6 +612,16 @@ function initFrames()
 	local playerClass = UnitClass("player")
 	local classText = db.profile.class or playerClass;
 	local specText = db.profile.spec or nil;
+
+	-- safety check
+	if not specTable[classText] then
+		print(playerClass);
+		classText = playerClass;
+		specText = nil;
+		db.profile.class = classText;
+		db.profile.spec = nil;
+	end
+
 	local classDropDown = CreateFrame("Frame", "MPLClassDropDown", frame, "UIDropDownMenuTemplate");
 	classDropDown:SetPoint("TOPLEFT", frame, "TOPLEFT", 0, -10);
 	UIDropDownMenu_SetWidth(classDropDown, dropDownWidth);
