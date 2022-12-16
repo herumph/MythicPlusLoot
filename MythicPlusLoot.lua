@@ -189,7 +189,7 @@ function createDungeonText(frame)
 	favString:SetJustifyH("RIGHT");
 	favString:SetPoint("TOPLEFT", frame, "TOPLEFT", 75, -50);
 	favString:SetTextColor(1, 1, 1, 1);
-	favString:SetText("Right click on item to favorite.");
+	favString:SetText(L["Right click on items to favorite"]);
 
 	local dungeonTableLength = 0
 	for _ in pairs(dungeonTable) do
@@ -215,7 +215,7 @@ function createDungeonText(frame)
 		dungeonString:SetJustifyH(justifyH);
 		dungeonString:SetPoint("TOPLEFT", frame, "TOPLEFT", offsetX, offsetY);
 		dungeonString:SetTextColor(1, 1, 1, 1);
-		dungeonString:SetText(L[k]);
+		dungeonString:SetText(k);
 	end
 end
 
@@ -463,23 +463,23 @@ function createItems(frame, slotText, mythicLevel, classText, specText)
 		if (L[v["slot"]] == slotText or slotText == "all") or favoriteMode then
 			local itemLevel
 			if (
-				v["dungeon"] == "Ruby Life Pools" or 
-				v["dungeon"] == "The Nokhud Offensive" or 
-				v["dungeon"] == "The Azure Vault" or 
-				v["dungeon"] == "Algeth'ar Academy"
+				v["dungeon"] == L["Ruby Life Pools"] or 
+				v["dungeon"] == L["The Nokhud Offensive"] or 
+				v["dungeon"] == L["The Azure Vault"] or 
+				v["dungeon"] == L["Algeth'ar Academy"]
 				) then
 				itemLevel = 1439 - (372 - itemLevelStart)
 			elseif (
-				v["dungeon"] == "Halls of Valor" or
-				v["dungeon"] == "Court of Stars"
+				v["dungeon"] == L["Halls of Valor"] or
+				v["dungeon"] == L["Court of Stars"]
 			) then
 				itemLevel = 1639 - (372 - itemLevelStart)
 			elseif (
-				v["dungeon"] == "Shadowmoon Burial Grounds"
+				v["dungeon"] == L["Shadowmoon Burial Grounds"]
 			) then
 				itemLevel = 1645 - (372 - itemLevelStart)
 			elseif(
-				v["dungeon"] == "Temple of the Jade Serpent"
+				v["dungeon"] == L["Temple of the Jade Serpent"]
 			) then
 				itemLevel = 1650 - (372 - itemLevelStart)
 			end
