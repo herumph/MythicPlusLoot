@@ -615,7 +615,6 @@ function initFrames()
 
 	-- safety check
 	if not specTable[classText] then
-		print(playerClass);
 		classText = playerClass;
 		specText = nil;
 		db.profile.class = classText;

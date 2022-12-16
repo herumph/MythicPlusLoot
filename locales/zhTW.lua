@@ -40,7 +40,7 @@ L["Dungeon Drop"] = "地城掉落"
 L["Weekly Vault"] = "每週寶庫"
 
 -- Dungeons
-L["Algethar Academy"] = "阿爾蓋薩學院"
+L["Algeth'ar Academy"] = "阿爾蓋薩學院"
 L["Ruby Life Pools"] = "晶紅生命之池"
 L["The Azure Vault"] = "蒼藍密庫"
 L["Halls of Infusion"] = "灌注迴廊"

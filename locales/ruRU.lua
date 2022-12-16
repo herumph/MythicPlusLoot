@@ -40,7 +40,7 @@ L["Dungeon Drop"] = "Подземелье"
 L["Weekly Vault"] = "Недельный сундук"
 
 -- Dungeons
-L["Algethar Academy"] = "Академия Алгет'ар"
+L["Algeth'ar Academy"] = "Академия Алгет'ар"
 L["Ruby Life Pools"] = "Рубиновые Омуты Жизни"
 L["The Azure Vault"] = "Лазурное хранилище"
 L["Halls of Infusion"] = "Чертоги Насыщения"

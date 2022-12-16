@@ -41,7 +41,7 @@ L["Weekly Vault"] = "금고 보상"
 L["Valor Upgrade"] = "용맹 강화"
 
 -- Dungeons
-L["Algethar Academy"] = "Algethar Academy"
+L["Algeth'ar Academy"] = "Algeth'ar Academy"
 L["Ruby Life Pools"] = "Ruby Life Pools"
 L["The Azure Vault"] = "The Azure Vault"
 L["Halls of Infusion"] = "Halls of Infusion"

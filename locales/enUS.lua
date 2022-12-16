@@ -37,7 +37,7 @@ L["Dungeon Drop"] = "Dungeon Drop"
 L["Weekly Vault"] = "Weekly Vault"
 
 -- Dungeons
-L["Algethar Academy"] = "Algethar Academy"
+L["Algeth'ar Academy"] = "Algeth'ar Academy"
 L["Ruby Life Pools"] = "Ruby Life Pools"
 L["The Azure Vault"] = "The Azure Vault"
 L["Halls of Infusion"] = "Halls of Infusion"
