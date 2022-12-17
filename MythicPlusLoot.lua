@@ -460,7 +460,7 @@ function createItems(frame, slotText, mythicLevel, classText, specText)
 	-- display the items
 	local xSize, ySize = 32, 32;
 	for k,v in pairs(trimmedItems) do
-		if (L[v["slot"]] == slotText or slotText == "all") or favoriteMode then
+		if (v["slot"] == slotText or slotText == "all") or favoriteMode then
 			local itemLevel
 			if (
 				v["dungeon"] == L["Ruby Life Pools"] or 

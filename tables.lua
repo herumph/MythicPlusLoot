@@ -913,21 +913,6 @@ function get_items()
                     ["slot"] = L["Two-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81058] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81079] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -959,56 +944,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81132] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143988] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144081] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144093] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144118] = {
                     ["armor"] = L["Cloth"],
                     ["slot"] = L["Hands"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -1685,21 +1620,6 @@ function get_items()
                     ["slot"] = L["Two-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81058] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81079] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -1731,56 +1651,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81132] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143988] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144081] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144093] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144118] = {
                     ["armor"] = L["Cloth"],
                     ["slot"] = L["Hands"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -2457,21 +2327,6 @@ function get_items()
                     ["slot"] = L["Two-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81058] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81079] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -2503,56 +2358,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81132] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143988] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144081] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144093] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144118] = {
                     ["armor"] = L["Cloth"],
                     ["slot"] = L["Hands"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -3231,21 +3036,6 @@ function get_items()
                     ["slot"] = L["Two-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81058] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81079] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -3277,56 +3067,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81132] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143988] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144081] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144093] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144118] = {
                     ["armor"] = L["Cloth"],
                     ["slot"] = L["Hands"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -4003,21 +3743,6 @@ function get_items()
                     ["slot"] = L["Two-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81058] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81079] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -4049,56 +3774,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81132] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143988] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144081] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144093] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144118] = {
                     ["armor"] = L["Cloth"],
                     ["slot"] = L["Hands"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -4775,21 +4450,6 @@ function get_items()
                     ["slot"] = L["Two-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81058] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81079] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -4821,56 +4481,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81132] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143988] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144081] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144093] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144118] = {
                     ["armor"] = L["Cloth"],
                     ["slot"] = L["Hands"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -5539,21 +5149,6 @@ function get_items()
                     ["slot"] = L["Two-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81058] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81079] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -5590,61 +5185,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [87544] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143988] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144081] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144093] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144118] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144216] = {
                     ["armor"] = L["Plate"],
                     ["slot"] = L["One-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -6311,21 +5851,6 @@ function get_items()
                     ["slot"] = L["Two-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81058] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81079] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -6362,61 +5887,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [87544] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143988] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144081] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144093] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144118] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144216] = {
                     ["armor"] = L["Plate"],
                     ["slot"] = L["One-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -7083,21 +6553,6 @@ function get_items()
                     ["slot"] = L["Two-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81058] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81079] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -7134,61 +6589,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [87544] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143988] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144081] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144093] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144118] = {
-                    ["armor"] = L["Cloth"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144216] = {
                     ["armor"] = L["Plate"],
                     ["slot"] = L["One-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -7867,31 +7267,6 @@ function get_items()
                     ["slot"] = L["Two-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81071] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81072] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81079] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81082] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -7923,66 +7298,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [87544] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143959] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143972] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143973] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143987] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Legs"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144093] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144216] = {
                     ["armor"] = L["Plate"],
                     ["slot"] = L["One-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -8604,26 +7919,6 @@ function get_items()
                     ["slot"] = L["Chest"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81071] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81072] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81082] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -8655,61 +7950,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143959] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143972] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143973] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143987] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Legs"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144113] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Trinket"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -9331,26 +8571,6 @@ function get_items()
                     ["slot"] = L["Chest"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81071] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81072] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81082] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -9382,61 +8602,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143959] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143972] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143973] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143987] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Legs"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144113] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Trinket"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -10113,31 +9278,6 @@ function get_items()
                     ["slot"] = L["Two-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81071] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81072] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81079] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81082] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -10169,66 +9309,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [87544] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143959] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143972] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143973] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143987] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Legs"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144093] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144216] = {
                     ["armor"] = L["Plate"],
                     ["slot"] = L["One-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -10852,26 +9932,6 @@ function get_items()
                     ["slot"] = L["Chest"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81071] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81072] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81082] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -10903,61 +9963,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143959] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143972] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143973] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143987] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Legs"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144113] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Trinket"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -11579,26 +10584,6 @@ function get_items()
                     ["slot"] = L["Chest"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81071] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81072] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81082] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -11630,61 +10615,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143959] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143972] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143973] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143987] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Legs"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144113] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Trinket"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -12306,26 +11236,6 @@ function get_items()
                     ["slot"] = L["Chest"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81071] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81072] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81082] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -12357,61 +11267,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143959] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143972] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143973] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143987] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Legs"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144113] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Trinket"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -13050,26 +11905,6 @@ function get_items()
                     ["slot"] = L["Chest"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81071] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81072] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81082] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -13101,61 +11936,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143959] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143972] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143973] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143987] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Legs"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144113] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Trinket"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -13792,26 +12572,6 @@ function get_items()
                     ["slot"] = L["Chest"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81071] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81072] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81082] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -13843,61 +12603,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143959] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143972] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143973] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143987] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Legs"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144113] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Trinket"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -14574,31 +13279,6 @@ function get_items()
                     ["slot"] = L["Two-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81071] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81072] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81079] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81082] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -14630,66 +13310,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [87544] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143959] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143972] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143973] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143987] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Legs"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144093] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144216] = {
                     ["armor"] = L["Plate"],
                     ["slot"] = L["One-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -15318,26 +13938,6 @@ function get_items()
                     ["slot"] = L["Chest"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81071] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81072] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81082] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -15369,61 +13969,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143959] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143972] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143973] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143987] = {
-                    ["armor"] = L["Leather"],
-                    ["slot"] = L["Legs"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144113] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Trinket"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -15541,21 +14086,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -16184,36 +14714,6 @@ function get_items()
                     ["slot"] = L["Ranged"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81060] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81067] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Ranged"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81069] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81074] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81075] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Head"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -16240,66 +14740,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143970] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144017] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Head"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144083] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144090] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Ranged"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144091] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144113] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Trinket"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -16926,36 +15366,6 @@ function get_items()
                     ["slot"] = L["Ranged"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81060] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81067] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Ranged"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81069] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81074] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81075] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Head"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -16982,66 +15392,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143970] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144017] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Head"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144083] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144090] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Ranged"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144091] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144113] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Trinket"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -17663,31 +16013,6 @@ function get_items()
                     ["slot"] = L["Shoulder"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81060] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81069] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81074] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81075] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Head"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -17714,61 +16039,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143970] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144017] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Head"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144083] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144091] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144113] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Trinket"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -18462,36 +16732,6 @@ function get_items()
                     ["slot"] = L["Two-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81060] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81069] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81074] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81075] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Head"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81079] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -18518,66 +16758,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [87544] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143970] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144017] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Head"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144083] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144091] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144093] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144216] = {
                     ["armor"] = L["Plate"],
                     ["slot"] = L["One-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -19194,31 +17374,6 @@ function get_items()
                     ["slot"] = L["Shoulder"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81060] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81069] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81074] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81075] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Head"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -19245,61 +17400,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143970] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144017] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Head"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144083] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144091] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144113] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Trinket"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -19991,36 +18091,6 @@ function get_items()
                     ["slot"] = L["Two-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81060] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81069] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81074] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81075] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Head"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81079] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -20047,66 +18117,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [87544] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143970] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144017] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Head"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144083] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144091] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144093] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144216] = {
                     ["armor"] = L["Plate"],
                     ["slot"] = L["One-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -20795,36 +18805,6 @@ function get_items()
                     ["slot"] = L["Two-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81060] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81069] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81074] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81075] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Head"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81079] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -20851,66 +18831,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [87544] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143970] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144017] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Head"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144083] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144091] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144093] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144216] = {
                     ["armor"] = L["Plate"],
                     ["slot"] = L["One-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -21597,36 +19517,6 @@ function get_items()
                     ["slot"] = L["Two-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81060] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81069] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81074] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81075] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Head"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81079] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -21653,66 +19543,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [87544] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143970] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144017] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Head"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144083] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144091] = {
-                    ["armor"] = L["Mail"],
-                    ["slot"] = L["Hands"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144093] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Two-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144216] = {
                     ["armor"] = L["Plate"],
                     ["slot"] = L["One-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -22376,26 +20206,6 @@ function get_items()
                     ["slot"] = L["Shoulder"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81070] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81073] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81083] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -22427,61 +20237,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [87544] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143960] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143971] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143974] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144116] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144216] = {
                     ["armor"] = L["Plate"],
                     ["slot"] = L["One-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -23133,31 +20888,6 @@ function get_items()
                     ["slot"] = L["One-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81063] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81070] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81073] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81083] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -23184,61 +20914,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143960] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143971] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143974] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144086] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144116] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -23875,26 +21550,6 @@ function get_items()
                     ["slot"] = L["Shoulder"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81070] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81073] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81083] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -23921,56 +21576,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143960] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143971] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143974] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144116] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -24609,26 +22214,6 @@ function get_items()
                     ["slot"] = L["Shoulder"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81070] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81073] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81083] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -24655,56 +22240,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143960] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143971] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143974] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144116] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -25361,31 +22896,6 @@ function get_items()
                     ["slot"] = L["One-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81063] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81070] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81073] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81083] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -25412,61 +22922,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143960] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143971] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143974] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144086] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144116] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -26118,31 +23573,6 @@ function get_items()
                     ["slot"] = L["One-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81063] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81070] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81073] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81083] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -26169,61 +23599,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143960] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143971] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143974] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144086] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144116] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -26862,26 +24237,6 @@ function get_items()
                     ["slot"] = L["Shoulder"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81070] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81073] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81083] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -26908,56 +24263,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143960] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143971] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143974] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144116] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -27614,31 +24919,6 @@ function get_items()
                     ["slot"] = L["One-Hand"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81063] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81070] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81073] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81083] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -27665,61 +24945,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143960] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143971] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143974] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144086] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["One-Hand"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144116] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
@@ -28356,26 +25581,6 @@ function get_items()
                     ["slot"] = L["Shoulder"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
-                [81070] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81073] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81083] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [81084] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
                 [81123] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Back"],
@@ -28402,56 +25607,6 @@ function get_items()
                     ["dungeon"] = L["Temple of the Jade Serpent"],
                 },
                 [81131] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Neck"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143960] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Chest"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143971] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Shoulder"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [143974] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Feet"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144094] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144111] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144112] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144114] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Finger"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144115] = {
-                    ["armor"] = L["None"],
-                    ["slot"] = L["Back"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144116] = {
-                    ["armor"] = L["Plate"],
-                    ["slot"] = L["Waist"],
-                    ["dungeon"] = L["Temple of the Jade Serpent"],
-                },
-                [144117] = {
                     ["armor"] = L["None"],
                     ["slot"] = L["Neck"],
                     ["dungeon"] = L["Temple of the Jade Serpent"],
