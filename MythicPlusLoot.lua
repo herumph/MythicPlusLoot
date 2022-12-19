@@ -620,8 +620,6 @@ function initFrames()
 		db.profile.class = classText;
 		db.profile.spec = nil;
 	end
-	print(playerClass);
-	print(specTable[playerClass])
 
 	local classDropDown = CreateFrame("Frame", "MPLClassDropDown", frame, "UIDropDownMenuTemplate");
 	classDropDown:SetPoint("TOPLEFT", frame, "TOPLEFT", 0, -10);
