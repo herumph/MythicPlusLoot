@@ -615,11 +615,13 @@ function initFrames()
 
 	-- safety check
 	if not specTable[classText] then
-		classText = playerClass;
+		classText = L["All Classes"];
 		specText = nil;
 		db.profile.class = classText;
 		db.profile.spec = nil;
 	end
+	print(playerClass);
+	print(specTable[playerClass])
 
 	local classDropDown = CreateFrame("Frame", "MPLClassDropDown", frame, "UIDropDownMenuTemplate");
 	classDropDown:SetPoint("TOPLEFT", frame, "TOPLEFT", 0, -10);
