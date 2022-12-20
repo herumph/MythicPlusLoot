@@ -466,7 +466,8 @@ function createItems(frame, slotText, mythicLevel, classText, specText)
 				v["dungeon"] == L["Ruby Life Pools"] or 
 				v["dungeon"] == L["The Nokhud Offensive"] or 
 				v["dungeon"] == L["The Azure Vault"] or 
-				v["dungeon"] == L["Algeth'ar Academy"]
+				v["dungeon"] == L["Algeth'ar Academy"] or
+				k == 201995
 				) then
 				itemLevel = 1439 - (372 - itemLevelStart)
 			elseif (

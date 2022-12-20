@@ -16059,7 +16059,7 @@ function get_items()
                 },
                 [193754] = {
                     ["armor"] = L["None"],
-                    ["slot"] = L["Shield"],
+                    ["slot"] = L["Off-Hand"],
                     ["dungeon"] = L["Ruby Life Pools"],
                 },
                 [193755] = {
@@ -16179,7 +16179,7 @@ function get_items()
                 },
                 [193645] = {
                     ["armor"] = L["None"],
-                    ["slot"] = L["Shield"],
+                    ["slot"] = L["Off-Hand"],
                     ["dungeon"] = L["The Azure Vault"],
                 },
                 [193647] = {
@@ -16329,7 +16329,7 @@ function get_items()
                 },
                 [201999] = {
                     ["armor"] = L["None"],
-                    ["slot"] = L["Shield"],
+                    ["slot"] = L["Off-Hand"],
                     ["dungeon"] = L["Halls of Valor"],
                 },
                 [134296] = {
@@ -17418,7 +17418,7 @@ function get_items()
                 },
                 [193754] = {
                     ["armor"] = L["None"],
-                    ["slot"] = L["Shield"],
+                    ["slot"] = L["Off-Hand"],
                     ["dungeon"] = L["Ruby Life Pools"],
                 },
                 [193755] = {
@@ -17538,7 +17538,7 @@ function get_items()
                 },
                 [193645] = {
                     ["armor"] = L["None"],
-                    ["slot"] = L["Shield"],
+                    ["slot"] = L["Off-Hand"],
                     ["dungeon"] = L["The Azure Vault"],
                 },
                 [193647] = {
@@ -17688,7 +17688,7 @@ function get_items()
                 },
                 [201999] = {
                     ["armor"] = L["None"],
-                    ["slot"] = L["Shield"],
+                    ["slot"] = L["Off-Hand"],
                     ["dungeon"] = L["Halls of Valor"],
                 },
                 [134296] = {
@@ -19568,7 +19568,7 @@ function get_items()
                 },
                 [193754] = {
                     ["armor"] = L["None"],
-                    ["slot"] = L["Shield"],
+                    ["slot"] = L["Off-Hand"],
                     ["dungeon"] = L["Ruby Life Pools"],
                 },
                 [193755] = {
@@ -19673,7 +19673,7 @@ function get_items()
                 },
                 [193645] = {
                     ["armor"] = L["None"],
-                    ["slot"] = L["Shield"],
+                    ["slot"] = L["Off-Hand"],
                     ["dungeon"] = L["The Azure Vault"],
                 },
                 [193647] = {
@@ -19818,7 +19818,7 @@ function get_items()
                 },
                 [201999] = {
                     ["armor"] = L["None"],
-                    ["slot"] = L["Shield"],
+                    ["slot"] = L["Off-Hand"],
                     ["dungeon"] = L["Halls of Valor"],
                 },
                 [134268] = {
@@ -20260,7 +20260,7 @@ function get_items()
                 },
                 [193754] = {
                     ["armor"] = L["None"],
-                    ["slot"] = L["Shield"],
+                    ["slot"] = L["Off-Hand"],
                     ["dungeon"] = L["Ruby Life Pools"],
                 },
                 [193755] = {
@@ -20355,7 +20355,7 @@ function get_items()
                 },
                 [193645] = {
                     ["armor"] = L["None"],
-                    ["slot"] = L["Shield"],
+                    ["slot"] = L["Off-Hand"],
                     ["dungeon"] = L["The Azure Vault"],
                 },
                 [193647] = {
@@ -20510,7 +20510,7 @@ function get_items()
                 },
                 [201999] = {
                     ["armor"] = L["None"],
-                    ["slot"] = L["Shield"],
+                    ["slot"] = L["Off-Hand"],
                     ["dungeon"] = L["Halls of Valor"],
                 },
                 [134268] = {
@@ -22945,7 +22945,7 @@ function get_items()
                 },
                 [193754] = {
                     ["armor"] = L["None"],
-                    ["slot"] = L["Shield"],
+                    ["slot"] = L["Off-Hand"],
                     ["dungeon"] = L["Ruby Life Pools"],
                 },
                 [193755] = {
@@ -23040,7 +23040,7 @@ function get_items()
                 },
                 [193645] = {
                     ["armor"] = L["None"],
-                    ["slot"] = L["Shield"],
+                    ["slot"] = L["Off-Hand"],
                     ["dungeon"] = L["The Azure Vault"],
                 },
                 [193647] = {
@@ -23195,7 +23195,7 @@ function get_items()
                 },
                 [201999] = {
                     ["armor"] = L["None"],
-                    ["slot"] = L["Shield"],
+                    ["slot"] = L["Off-Hand"],
                     ["dungeon"] = L["Halls of Valor"],
                 },
                 [134268] = {

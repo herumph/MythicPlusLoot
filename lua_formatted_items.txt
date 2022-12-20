@@ -15817,7 +15817,7 @@ local dungeonItems = {
 			},
 			[193754] = {
 				["armor"] = L["None"],
-				["slot"] = L["Shield"],
+				["slot"] = L["Off-Hand"],
 				["dungeon"] = L["Ruby Life Pools"],
 			},
 			[193755] = {
@@ -15937,7 +15937,7 @@ local dungeonItems = {
 			},
 			[193645] = {
 				["armor"] = L["None"],
-				["slot"] = L["Shield"],
+				["slot"] = L["Off-Hand"],
 				["dungeon"] = L["The Azure Vault"],
 			},
 			[193647] = {
@@ -16087,7 +16087,7 @@ local dungeonItems = {
 			},
 			[201999] = {
 				["armor"] = L["None"],
-				["slot"] = L["Shield"],
+				["slot"] = L["Off-Hand"],
 				["dungeon"] = L["Halls of Valor"],
 			},
 			[134296] = {
@@ -17176,7 +17176,7 @@ local dungeonItems = {
 			},
 			[193754] = {
 				["armor"] = L["None"],
-				["slot"] = L["Shield"],
+				["slot"] = L["Off-Hand"],
 				["dungeon"] = L["Ruby Life Pools"],
 			},
 			[193755] = {
@@ -17296,7 +17296,7 @@ local dungeonItems = {
 			},
 			[193645] = {
 				["armor"] = L["None"],
-				["slot"] = L["Shield"],
+				["slot"] = L["Off-Hand"],
 				["dungeon"] = L["The Azure Vault"],
 			},
 			[193647] = {
@@ -17446,7 +17446,7 @@ local dungeonItems = {
 			},
 			[201999] = {
 				["armor"] = L["None"],
-				["slot"] = L["Shield"],
+				["slot"] = L["Off-Hand"],
 				["dungeon"] = L["Halls of Valor"],
 			},
 			[134296] = {
@@ -19326,7 +19326,7 @@ local dungeonItems = {
 			},
 			[193754] = {
 				["armor"] = L["None"],
-				["slot"] = L["Shield"],
+				["slot"] = L["Off-Hand"],
 				["dungeon"] = L["Ruby Life Pools"],
 			},
 			[193755] = {
@@ -19431,7 +19431,7 @@ local dungeonItems = {
 			},
 			[193645] = {
 				["armor"] = L["None"],
-				["slot"] = L["Shield"],
+				["slot"] = L["Off-Hand"],
 				["dungeon"] = L["The Azure Vault"],
 			},
 			[193647] = {
@@ -19576,7 +19576,7 @@ local dungeonItems = {
 			},
 			[201999] = {
 				["armor"] = L["None"],
-				["slot"] = L["Shield"],
+				["slot"] = L["Off-Hand"],
 				["dungeon"] = L["Halls of Valor"],
 			},
 			[134268] = {
@@ -20018,7 +20018,7 @@ local dungeonItems = {
 			},
 			[193754] = {
 				["armor"] = L["None"],
-				["slot"] = L["Shield"],
+				["slot"] = L["Off-Hand"],
 				["dungeon"] = L["Ruby Life Pools"],
 			},
 			[193755] = {
@@ -20113,7 +20113,7 @@ local dungeonItems = {
 			},
 			[193645] = {
 				["armor"] = L["None"],
-				["slot"] = L["Shield"],
+				["slot"] = L["Off-Hand"],
 				["dungeon"] = L["The Azure Vault"],
 			},
 			[193647] = {
@@ -20268,7 +20268,7 @@ local dungeonItems = {
 			},
 			[201999] = {
 				["armor"] = L["None"],
-				["slot"] = L["Shield"],
+				["slot"] = L["Off-Hand"],
 				["dungeon"] = L["Halls of Valor"],
 			},
 			[134268] = {
@@ -22703,7 +22703,7 @@ local dungeonItems = {
 			},
 			[193754] = {
 				["armor"] = L["None"],
-				["slot"] = L["Shield"],
+				["slot"] = L["Off-Hand"],
 				["dungeon"] = L["Ruby Life Pools"],
 			},
 			[193755] = {
@@ -22798,7 +22798,7 @@ local dungeonItems = {
 			},
 			[193645] = {
 				["armor"] = L["None"],
-				["slot"] = L["Shield"],
+				["slot"] = L["Off-Hand"],
 				["dungeon"] = L["The Azure Vault"],
 			},
 			[193647] = {
@@ -22953,7 +22953,7 @@ local dungeonItems = {
 			},
 			[201999] = {
 				["armor"] = L["None"],
-				["slot"] = L["Shield"],
+				["slot"] = L["Off-Hand"],
 				["dungeon"] = L["Halls of Valor"],
 			},
 			[134268] = {
