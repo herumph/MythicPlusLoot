@@ -1,7 +1,7 @@
 local AddonName, MPL = ...;
 local L = MPL.L or {}
 local sizex = 700;
-local sizey = 700;
+local sizey = 600;
 
 local frame;
 local framesInitialized;
@@ -13,14 +13,14 @@ local LDB;
 local LDBI;
 
 -- get big tables
-local iLevelListDrop = MPL_tables.get_ilvls();
 local gearSlots = MPL_tables.get_slots();
 local mythicLabels = MPL_tables.get_mythic_labels();
-local mythicLevels = MPL_tables.get_mythic_levels();
 local dungeonTable = MPL_tables.get_dungeons();
 local classTable = MPL_tables.get_classes();
 local specTable = MPL_tables.get_specs();
-local dungeonItems = MPL_tables.get_items();
+local classIDs = MPL_tables.class_ids();
+local specIDs = MPL_tables.spec_ids();
+local dungeonIDs = MPL_tables.dungeon_ids();
 
 -- icons
 local icons = {
@@ -272,7 +272,7 @@ function getRoleIcon(role)
 	end
 end
 
-function undoFavItem(f, itemFrame, itemID, itemLevel)
+function undoFavItem(f, itemFrame, itemID)
 	f.ico.prefix = icon_unfavorite;
 	f.ico:SetText(f.ico.prefix .. f.ico.suffix);
 	itemFrame.ico.prefix = icon_unfavorite;
@@ -282,7 +282,7 @@ function undoFavItem(f, itemFrame, itemID, itemLevel)
 	itemFrame.favorite = false;
 end
 
-function redoFavItem(f, itemFrame, itemID, itemLevel)
+function redoFavItem(f, itemFrame, itemID)
 	f.ico.prefix = icon_favorite;
 	f.ico:SetText(f.ico.prefix .. f.ico.suffix);
 	itemFrame.ico.prefix = icon_favorite;
@@ -292,7 +292,7 @@ function redoFavItem(f, itemFrame, itemID, itemLevel)
 	itemFrame.favorite = true;
 end
 
-function createFavItem(frame, itemFrame, itemID, itemLevel)
+function createFavItem(frame, itemFrame, itemID)
 	local xStart = sizex + 10;
 	local xItemStart, yItemStart, yItemOffset, xItemSecondColumn = xStart, -120, -220, 325;
 	local tmpFavCount = 0;
@@ -301,9 +301,9 @@ function createFavItem(frame, itemFrame, itemID, itemLevel)
 	if tmpFavItems[itemID] ~= nil then
 		-- already added
 		if itemFrame.favorite then
-			undoFavItem(itemFrame.fav, itemFrame, itemID, itemLevel);
+			undoFavItem(itemFrame.fav, itemFrame, itemID);
 		else
-			redoFavItem(itemFrame.fav, itemFrame, itemID, itemLevel);
+			redoFavItem(itemFrame.fav, itemFrame, itemID);
 		end
 		return
 	end
@@ -353,7 +353,7 @@ function createFavItem(frame, itemFrame, itemID, itemLevel)
 			f:SetScript("OnEnter",
 			function()
 				GameTooltip:SetOwner(f, "ANCHOR_BOTTOMRIGHT",f:GetWidth(),f:GetHeight());
-				GameTooltip:SetHyperlink("item:"..k.."..::::::::::::3:6807:"..itemLevel);
+				GameTooltip:SetHyperlink(item["link"]);
 				GameTooltip:Show();
 			end
 			);
@@ -367,8 +367,7 @@ function createFavItem(frame, itemFrame, itemID, itemLevel)
 				local shift_key = IsShiftKeyDown()
 				if button == "LeftButton" then
 					if shift_key then
-						itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo("item:"..k.."..::::::::::::2:6807:"..itemLevel)
-						sendItemLink(itemLink)
+						sendItemLink(item["link"])
 					end
 				end
 			end
@@ -403,31 +402,44 @@ function createItems(frame, slotText, mythicLevel, classText, specText)
 		[9] = {0, 0, 0},
 		[10] = {0, 0, 0},
 	}
+	
+	-- Reset the searches in the adventure guide
+	EJ_ClearSearch()
+	C_EncounterJournal.ResetSlotFilter()
+	EJ_ResetLootFilter()
 
-	-- Dungeon drop or weekly vault
-	local itemLevelStart = iLevelListDrop[mythicLevel];
-
-	-- create a table of items based on the filters applied
-	if classText ~= L["All Classes"] then
-		-- class and spec defined
-		if specText then
-			for k,v in pairs(dungeonItems[classText][specText]) do
-				trimmedItems[k] = v
-			end
-		-- only class defined
-		else
-			for k,v in pairs(dungeonItems[classText]) do
-				for k2,v2 in pairs(dungeonItems[classText][k]) do
-					trimmedItems[k2] = v2
-				end
-			end
+	-- item slot filter
+	if slotText ~= L["Favorites"] then
+		local slotIndex = {}
+		for k,v in pairs(gearSlots) do
+			slotIndex[v] = k
 		end
-	else
-		for k,v in pairs(dungeonItems) do
-			for k2,v2 in pairs(dungeonItems[k]) do
-				for k3,v3 in pairs(dungeonItems[k][k2]) do
-					trimmedItems[k3] = v3
-				end
+
+		C_EncounterJournal.SetSlotFilter(slotIndex[slotText] - 1)
+	end
+
+	-- class/spec filter
+	if classText ~= L["All Classes"] then
+		if specText then
+			EJ_SetLootFilter(classIDs[classText], specIDs[classText][specText])
+		else
+			EJ_SetLootFilter(classIDs[classText])
+		end
+	end
+
+	-- set difficulty to mythic keystone and set mythic level
+	EJ_SetDifficulty(8)
+	C_EncounterJournal.SetPreviewMythicPlusLevel(mythicLevel + 1)
+
+	-- get the items
+	for k,v in pairs(dungeonIDs) do
+		EJ_SelectInstance(v)
+		numItems = EJ_GetNumLoot()
+		for i = 1, numItems do
+			item = C_EncounterJournal.GetLootInfoByIndex(i); 
+			if item["itemQuality"] == "ffa335ee" then -- needed to trim out random green items
+				trimmedItems[item["itemID"]] = item
+				trimmedItems[item["itemID"]]["dungeon"] = k
 			end
 		end
 	end
@@ -436,10 +448,16 @@ function createItems(frame, slotText, mythicLevel, classText, specText)
 	local favoriteMode = (slotText == L["Favorites"]) and true or false;
 	local favoriteList = {};
 	if favoriteMode then
-		for k,v in pairs(dungeonItems) do
-			for k2,v2 in pairs(dungeonItems[k]) do
-				for k3,v3 in pairs(dungeonItems[k][k2]) do
-					trimmedItems[k3] = v3
+		EJ_ResetLootFilter()
+		-- get the items
+		for k,v in pairs(dungeonIDs) do
+			EJ_SelectInstance(v) -- Ruby Life Pools
+			numItems = EJ_GetNumLoot()
+			for i = 1, numItems do
+				item = C_EncounterJournal.GetLootInfoByIndex(i); 
+				if item["itemQuality"] == "ffa335ee" then -- needed to trim out random green items
+					trimmedItems[item["itemID"]] = item
+					trimmedItems[item["itemID"]]["dungeon"] = k
 				end
 			end
 		end
@@ -451,7 +469,6 @@ function createItems(frame, slotText, mythicLevel, classText, specText)
 		trimmedItems = favoriteList
 	end
 
-	-- replace this later
 	local dungeonTableLength = 0
 	for _ in pairs(dungeonTable) do
 		dungeonTableLength = dungeonTableLength + 1
@@ -460,102 +477,75 @@ function createItems(frame, slotText, mythicLevel, classText, specText)
 	-- display the items
 	local xSize, ySize = 32, 32;
 	for k,v in pairs(trimmedItems) do
-		if (v["slot"] == slotText or slotText == "all") or favoriteMode then
-			local itemLevel
-			if (
-				v["dungeon"] == L["Ruby Life Pools"] or 
-				v["dungeon"] == L["The Nokhud Offensive"] or 
-				v["dungeon"] == L["The Azure Vault"] or 
-				v["dungeon"] == L["Algeth'ar Academy"] or
-				k == 201995
-				) then
-				itemLevel = 1439 - (372 - itemLevelStart)
-			elseif (
-				v["dungeon"] == L["Halls of Valor"] or
-				v["dungeon"] == L["Court of Stars"]
-			) then
-				itemLevel = 1639 - (372 - itemLevelStart)
-			elseif (
-				v["dungeon"] == L["Shadowmoon Burial Grounds"]
-			) then
-				itemLevel = 1645 - (372 - itemLevelStart)
-			elseif(
-				v["dungeon"] == L["Temple of the Jade Serpent"]
-			) then
-				itemLevel = 1650 - (372 - itemLevelStart)
-			end
+		local itemIcon = GetItemIcon(k);
+		local f = CreateFrame("Frame", "MPLItemIcon"..k, frame);
+		tinsert(framepool, f);
+		f:SetSize(xSize, ySize);
 
-			local itemIcon = GetItemIcon(k);
-			local f = CreateFrame("Frame", "MPLItemIcon"..k, frame);
-			tinsert(framepool, f);
-			f:SetSize(xSize, ySize);
+		local x, y;
+		local dungeonNumber = dungeonTable[v["dungeon"]];
 
-			local x, y;
-			local dungeonNumber = dungeonTable[v["dungeon"]];
-
-			-- wrapping items if there are more than six for a given dungeon
-			if dungeonCount[dungeonNumber][1] % 6 == 0 and dungeonCount[dungeonNumber][1] > 0 then
-				dungeonCount[dungeonNumber][2], dungeonCount[dungeonNumber][3] = dungeonCount[dungeonNumber][1], dungeonCount[dungeonNumber][3]+50
-			end
-
-			-- First column
-			if dungeonNumber<=dungeonTableLength/2 then
-				x = xItemStart+xSize/4+(dungeonCount[dungeonNumber][1] - dungeonCount[dungeonNumber][2])*xSize*1.5;
-				y = (yItemStart - dungeonCount[dungeonNumber][3])+(dungeonNumber-1)*yItemOffset/2-ySize+ySize/4;
-			-- Second column
-			else
-				x = xItemStart+xSecondColumn+xSize/4+(dungeonCount[dungeonNumber][1] - dungeonCount[dungeonNumber][2])*xSize*1.5;
-				y = (yItemStart -  dungeonCount[dungeonNumber][3])+(dungeonNumber-dungeonTableLength/2-1)*yItemOffset/2-ySize+ySize/4;
-			end
-
-			f:SetPoint("TOPLEFT", frame, "TOPLEFT", x, y);
-			f.tex = f:CreateTexture();
-			f.tex:SetAllPoints(f);
-			f.tex:SetTexture(itemIcon);
-			f.ico = f:CreateFontString(nil, "OVERLAY", "GameTooltipText")
-			f.ico:SetPoint("BOTTOMLEFT", f, "TOPLEFT", 0, 0)
-			f.ico.prefix = "";
-			f.ico.suffix = "";
-			local isInFavorites = (db.profile.favoriteItems[k] ~= nil);
-			if isInFavorites then
-				f.role = db.profile.favoriteItems[k];
-			else
-				f.role = "ALL";
-			end
-			if not favoriteMode and isInFavorites then
-				f.ico.prefix = icon_favorite;
-			end
-			f.ico.suffix = getRoleIcon(f.role);
-			f.ico:SetText(f.ico.prefix .. f.ico.suffix);
-			f.favorite = (favoriteMode or isInFavorites) and true or false;
-			f.favoriteMode = favoriteMode;
-			f:SetScript("OnEnter",
-			function()
-				GameTooltip:SetOwner(f, "ANCHOR_BOTTOMRIGHT",f:GetWidth(),f:GetHeight());
-				GameTooltip:SetHyperlink("item:"..k.."..::::::::::::3:6000:"..itemLevel);
-				GameTooltip:Show();
-			end
-			);
-			f:SetScript("OnLeave",
-			function()
-				GameTooltip:Hide();
-			end
-			);
-			f:SetScript("OnMouseDown",
-			function(self, button)
-				local shift_key = IsShiftKeyDown()
-				if button == "LeftButton" then
-					if shift_key then
-						itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo("item:"..k.."..::::::::::::2:6807:"..itemLevel)
-						sendItemLink(itemLink)
-					end
-				elseif button == "RightButton" then
-					createFavItem(frame, f, k, itemLevel);
-				end
-			end
-			);
-			dungeonCount[dungeonNumber][1] = dungeonCount[dungeonNumber][1]+1
+		-- wrapping items if there are more than six for a given dungeon
+		if dungeonCount[dungeonNumber][1] % 5 == 0 and dungeonCount[dungeonNumber][1] > 0 then
+			dungeonCount[dungeonNumber][2], dungeonCount[dungeonNumber][3] = dungeonCount[dungeonNumber][1], dungeonCount[dungeonNumber][3]+37
 		end
+
+		-- First column
+		if dungeonNumber<=dungeonTableLength/2 then
+			x = xItemStart+xSize/4+(dungeonCount[dungeonNumber][1] - dungeonCount[dungeonNumber][2])*xSize*1.5;
+			y = (yItemStart - dungeonCount[dungeonNumber][3])+(dungeonNumber-1)*yItemOffset/2-ySize+ySize/4;
+		-- Second column
+		else
+			x = xItemStart+xSecondColumn+xSize/4+(dungeonCount[dungeonNumber][1] - dungeonCount[dungeonNumber][2])*xSize*1.5;
+			y = (yItemStart -  dungeonCount[dungeonNumber][3])+(dungeonNumber-dungeonTableLength/2-1)*yItemOffset/2-ySize+ySize/4;
+		end
+
+		f:SetPoint("TOPLEFT", frame, "TOPLEFT", x, y);
+		f.tex = f:CreateTexture();
+		f.tex:SetAllPoints(f);
+		f.tex:SetTexture(itemIcon);
+		f.ico = f:CreateFontString(nil, "OVERLAY", "GameTooltipText")
+		f.ico:SetPoint("BOTTOMLEFT", f, "TOPLEFT", 0, 0)
+		f.ico.prefix = "";
+		f.ico.suffix = "";
+		local isInFavorites = (db.profile.favoriteItems[k] ~= nil);
+		if isInFavorites then
+			f.role = db.profile.favoriteItems[k];
+		else
+			f.role = "ALL";
+		end
+		if not favoriteMode and isInFavorites then
+			f.ico.prefix = icon_favorite;
+		end
+		f.ico.suffix = getRoleIcon(f.role);
+		f.ico:SetText(f.ico.prefix .. f.ico.suffix);
+		f.favorite = (favoriteMode or isInFavorites) and true or false;
+		f.favoriteMode = favoriteMode;
+		f:SetScript("OnEnter",
+		function()
+			GameTooltip:SetOwner(f, "ANCHOR_BOTTOMRIGHT",f:GetWidth(),f:GetHeight());
+			GameTooltip:SetHyperlink(v["link"]);
+			GameTooltip:Show();
+		end
+		);
+		f:SetScript("OnLeave",
+		function()
+			GameTooltip:Hide();
+		end
+		);
+		f:SetScript("OnMouseDown",
+		function(self, button)
+			local shift_key = IsShiftKeyDown()
+			if button == "LeftButton" then
+				if shift_key then
+					sendItemLink(item["link"])
+				end
+			elseif button == "RightButton" then
+				createFavItem(frame, f, k);
+			end
+		end
+		);
+		dungeonCount[dungeonNumber][1] = dungeonCount[dungeonNumber][1]+1
 	end
 
 	itemsInitialized = true;
