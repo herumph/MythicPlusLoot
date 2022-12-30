@@ -6,7 +6,7 @@ local L = MPL.L or {}
 
 -- Options
 L["Enable Minimap Button"] = "Minimap Button aktivieren"
-L["If the Minimap Button is enabled"] = "Wenn die Minimap-Button aktiviert ist"
+L["If the Minimap Button is enabled"] = "Wenn der Minimap-Button aktiviert ist"
 L["Right click on items to favorite"] = "Rechts klicken um items zu favorisieren"
 L["Click to toggle AddOn Window"] = "Klicken um AddOn fenster umzuschalten"
 
