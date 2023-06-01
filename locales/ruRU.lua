@@ -50,6 +50,12 @@ L["Halls of Valor"] = "Чертоги Доблести"
 L["Court of Stars"] = "Квартал Звезд"
 L["Temple of the Jade Serpent"] = "Храм Нефритовой Змеи"
 L["Shadowmoon Burial Grounds"] = "Некрополь Призрачной Луны"
+L["Brackenhide Hollow"] = "Ореховая лощина"
+L["Freehold"] = "Право собственности"
+L["Neltharion's Lair"] = "Логово Нелтариона"
+L["Uldaman: Legacy of Tyr"] = "Ульдаман: Наследие Тира"
+L["The Underrot"] = "Подгнилье"
+L["The Vortex Pinnacle"] = "Вершина Вихря"
 
 -- General
 L["Item Slot"] = "Тип предмета"

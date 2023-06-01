@@ -49,6 +49,12 @@ L["Halls of Valor"] = "Halls of Valor"
 L["Court of Stars"] = "Court of Stars"
 L["Temple of the Jade Serpent"] = "Temple of the Jade Serpent"
 L["Shadowmoon Burial Grounds"] = "Shadowmoon Burial Grounds"
+L["Brackenhide Hollow"] = "Brackenhide Hollow"
+L["Freehold"] = "Freehold"
+L["Neltharion's Lair"] = "Neltharion's Lair"
+L["Uldaman: Legacy of Tyr"] = "Uldaman: Legacy of Tyr"
+L["The Underrot"] = "The Underrot"
+L["The Vortex Pinnacle"] = "The Vortex Pinnacle"
 
 -- General
 L["Item Slot"] = "아이템 슬롯"
