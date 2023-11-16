@@ -61,8 +61,7 @@ local function get_dungeons()
         [L["Atal'Dazar"]] = 4,
         [L["The Everbloom"]] = 5,
         [L["Throne of the Tides"]] = 6,
-        [L["Dawn of the Infinites: Galakrond's Fall"]] = 7,
-        [L["Dawn of the Infinites: Murozond's Rise"]] = 8,
+        [L["Dawn of the Infinites"]] = 7,
     }
 
     return dungeonTable
@@ -77,8 +76,7 @@ local function dungeon_ids()
         [L["Atal'Dazar"]] = 968,
         [L["The Everbloom"]] = 556,
         [L["Throne of the Tides"]] = 65,
-        [L["Dawn of the Infinites: Galakrond's Fall"]] = 1209,
-        [L["Dawn of the Infinites: Murozond's Rise"]] = 1209,
+        [L["Dawn of the Infinites"]] = 1209,
     }
 
     return dungeonIDs
