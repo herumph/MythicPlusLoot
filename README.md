@@ -7,3 +7,10 @@ To install manually:
 
 To access in game:
 - Type /mpl in chat or click the mini map button
+
+
+Wow DB info:
+https://github.com/wowdev/WoWDBDefs/tree/master
+
+Dungeon IDs found in the JournalInstance DB:
+https://wago.tools/db2/JournalInstance
