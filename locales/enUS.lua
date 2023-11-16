@@ -54,6 +54,14 @@ L["Neltharion's Lair"] = "Neltharion's Lair"
 L["Uldaman: Legacy of Tyr"] = "Uldaman: Legacy of Tyr"
 L["The Underrot"] = "The Underrot"
 L["The Vortex Pinnacle"] = "The Vortex Pinnacle"
+L["Darkheart Thicket"] = "Darkheart Thicket"
+L["Black Rook Hold"] = "Black Rook Hold"
+L["Waycrest Manor"] = "Waycrest Manor"
+L["Atal'Dazar"] = "Atal'Dazar"
+L["The Everbloom"] = "The Everbloom"
+L["Throne of the Tides"] = "Throne of the Tides"
+L["Dawn of the Infinites: Galakrond's Fall"] = "Dawn of the Infinites: Galakrond's Fall"
+L["Dawn of the Infinites: Murozond's Rise"] = "Dawn of the Infinites: Murozond's Rise"
 
 
 -- General
