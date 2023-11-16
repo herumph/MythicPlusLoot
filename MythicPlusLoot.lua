@@ -538,7 +538,7 @@ function createItems(frame, slotText, mythicLevel, classText, specText)
 			local shift_key = IsShiftKeyDown()
 			if button == "LeftButton" then
 				if shift_key then
-					sendItemLink(item["link"])
+					sendItemLink(v["link"])
 				end
 			elseif button == "RightButton" then
 				createFavItem(frame, f, k);
@@ -552,7 +552,7 @@ function createItems(frame, slotText, mythicLevel, classText, specText)
 end
 
 local slotText, mythicValue, mythicLevel, mythicText, sourceText;
-MPL.BackdropColor = {0.058823399245739, 0.058823399245739, 0.058823399245739, 0.9}
+MPL.BackdropColor = {0.058823399245739, 0.058823399245739, 0.058823399245739, 0.7}
 
 function closeMainFrame()
 	if frame and framesInitialized then
@@ -584,6 +584,11 @@ function initFrames()
 	local tex = frame:CreateTexture(nil, "BACKGROUND");
 	tex:SetAllPoints();
 	tex:SetColorTexture(unpack(MPL.BackdropColor));
+
+	--moveable
+	frame:SetMovable(true)
+	frame:EnableMouse(true)
+	frame:RegisterForDrag("LeftButton")
 
 	-- Close button
 	frame.closeButton = CreateFrame("Button", "MPLCloseButton", frame, "UIPanelCloseButton");

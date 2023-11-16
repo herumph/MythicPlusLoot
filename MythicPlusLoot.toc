@@ -5,6 +5,7 @@
 ## Notes: Gear scaling for mythic+ dungeons.
 ## Notes-ruRU: Скалирование снаряжения для М+ подземелий.
 ## SavedVariables: MythicPlusLootDB
+## IconTexture: Interface\AddOns\MythicPlusLoot\textures\icon.tga
 
 libs\load_libs.xml
 init.lua
