@@ -60,8 +60,7 @@ L["Waycrest Manor"] = "Waycrest Manor"
 L["Atal'Dazar"] = "Atal'Dazar"
 L["The Everbloom"] = "The Everbloom"
 L["Throne of the Tides"] = "Throne of the Tides"
-L["Dawn of the Infinites: Galakrond's Fall"] = "Dawn of the Infinites: Galakrond's Fall"
-L["Dawn of the Infinites: Murozond's Rise"] = "Dawn of the Infinites: Murozond's Rise"
+L["Dawn of the Infinites"] = "Dawn of the Infinites"
 
 
 -- General
