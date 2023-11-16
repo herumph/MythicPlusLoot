@@ -55,14 +55,14 @@ MPL_tables.get_mythic_labels = get_mythic_labels
 
 local function get_dungeons()
     local dungeonTable = {
-        [L["Brackenhide Hollow"]] = 1,
-        [L["Freehold"]] = 2,
-        [L["Halls of Infusion"]] = 3,
-        [L["The Underrot"]] = 4,
-        [L["Neltharus"]] = 5,
-        [L["Neltharion's Lair"]] = 6,
-        [L["Uldaman: Legacy of Tyr"]] = 7,
-        [L["The Vortex Pinnacle"]] = 8,
+        [L["Darkheart Thicket"]] = 1,
+        [L["Black Rook Hold"]] = 2,
+        [L["Waycrest Manor"]] = 3,
+        [L["Atal'Dazar"]] = 4,
+        [L["The Everbloom"]] = 5,
+        [L["Throne of the Tides"]] = 6,
+        [L["Dawn of the Infinites: Galakrond's Fall"]] = 7,
+        [L["Dawn of the Infinites: Murozond's Rise"]] = 8,
     }
 
     return dungeonTable
@@ -71,14 +71,14 @@ MPL_tables.get_dungeons = get_dungeons
 
 local function dungeon_ids()
     local dungeonIDs = {
-        [L["Brackenhide Hollow"]] = 1196,
-        [L["Freehold"]] = 1001,
-        [L["Halls of Infusion"]] = 1204,
-        [L["The Underrot"]] = 1022,
-        [L["Neltharus"]] = 1199,
-        [L["Neltharion's Lair"]] = 767,
-        [L["Uldaman: Legacy of Tyr"]] = 1197,
-        [L["The Vortex Pinnacle"]] = 68,
+        [L["Darkheart Thicket"]] = 762,
+        [L["Black Rook Hold"]] = 740,
+        [L["Waycrest Manor"]] = 1021,
+        [L["Atal'Dazar"]] = 968,
+        [L["The Everbloom"]] = 556,
+        [L["Throne of the Tides"]] = 65,
+        [L["Dawn of the Infinites: Galakrond's Fall"]] = 1209,
+        [L["Dawn of the Infinites: Murozond's Rise"]] = 1209,
     }
 
     return dungeonIDs
