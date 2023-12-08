@@ -47,6 +47,7 @@ local function get_mythic_labels()
         [17] = L["M+18/Valor 9"],
         [18] = L["M+19/Valor 10"],
         [19] = L["M+20/Valor 10"],
+        [20] = L["M+21/Valor 10"],
     }
 
     return mythicLabels
@@ -55,14 +56,15 @@ MPL_tables.get_mythic_labels = get_mythic_labels
 
 local function get_dungeons()
     local dungeonTable = {
-        [L["Ruby Life Pools"]] = 1,
-        [L["The Nokhud Offensive"]] = 2,
-        [L["The Azure Vault"]] = 3,
-        [L["Algeth'ar Academy"]] = 4,
-        [L["Halls of Valor"]] = 5,
-        [L["Court of Stars"]] = 6,
-        [L["Temple of the Jade Serpent"]] = 7,
-        [L["Shadowmoon Burial Grounds"]] = 8,
+        -- [L["Dawn of the Infinite: Galakrond's Fall"]] = 1,
+        -- [L["Dawn of the Infinite: Murozond's Rise"]] = 2,
+        [L["Dawn of the Infinite"]] = 2,
+        [L["Atal'Dazar"]] = 3,
+        [L["Waycrest Manor"]] = 4,
+        [L["Black Rook Hold"]] = 5,
+        [L["Darkheart Thicket"]] = 6,
+        [L["The Everbloom"]] = 7,
+        [L["Throne of the Tides"]] = 8,
     }
 
     return dungeonTable
@@ -71,14 +73,15 @@ MPL_tables.get_dungeons = get_dungeons
 
 local function dungeon_ids()
     local dungeonIDs = {
-        [L["Ruby Life Pools"]] = 1202,
-        [L["The Nokhud Offensive"]] = 1198,
-        [L["The Azure Vault"]] = 1203,
-        [L["Algeth'ar Academy"]] = 1201,
-        [L["Halls of Valor"]] = 721,
-        [L["Court of Stars"]] = 800,
-        [L["Temple of the Jade Serpent"]] = 313,
-        [L["Shadowmoon Burial Grounds"]] = 537,
+        -- [L["Dawn of the Infinite: Galakrond's Fall"]] = 1209,
+        -- [L["Dawn of the Infinite: Murozond's Rise"]] = 1209,
+        [L["Dawn of the Infinite"]] = 1209,
+        [L["Atal'Dazar"]] = 968,
+        [L["Waycrest Manor"]] = 1021,
+        [L["Black Rook Hold"]] = 740,
+        [L["Darkheart Thicket"]] = 762,
+        [L["The Everbloom"]] = 556,
+        [L["Throne of the Tides"]] = 65,
     }
 
     return dungeonIDs
@@ -115,7 +118,7 @@ local function spec_ids()
         },
         [L["Paladin"]] = {
             [L["Holy"]] = 65,
-            [L["Protection"]] = 66, 
+            [L["Protection"]] = 66,
             [L["Retribution"]] = 70
         },
         [L["Hunter"]] = {
@@ -170,7 +173,8 @@ local function spec_ids()
         },
         [L["Evoker"]] = {
             [L["Devastation"]] = 1467,
-            [L["Preservation"]] = 1468
+            [L["Preservation"]] = 1468,
+            [L["Augmentation"]] = 1473
         }
     }
 
@@ -203,8 +207,8 @@ MPL_tables.get_classes = get_classes
 local function get_specs()
     local specTable = {
         [L["Warrior"]] = {
-            [1] = L["Arms"], 
-            [2] = L["Fury"], 
+            [1] = L["Arms"],
+            [2] = L["Fury"],
             [3] = L["Protection"]
         },
         [L["Paladin"]] = {
@@ -264,7 +268,8 @@ local function get_specs()
         },
         [L["Evoker"]] = {
             [1] = L["Devastation"],
-            [2] = L["Preservation"]
+            [2] = L["Preservation"],
+            [3] = L["Augmentation"]
         }
     }
 

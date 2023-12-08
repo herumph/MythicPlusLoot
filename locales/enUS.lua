@@ -1,4 +1,4 @@
-if not(GetLocale() == "enUS") then
+if not (GetLocale() == "enUS") then
     return
 end
 local AddonName, MPL = ...;
@@ -38,16 +38,15 @@ L["Dungeon Drop"] = "Dungeon Drop"
 L["Weekly Vault"] = "Weekly Vault"
 
 -- Dungeons
-L["Algeth'ar Academy"] = "Algeth'ar Academy"
-L["Ruby Life Pools"] = "Ruby Life Pools"
-L["The Azure Vault"] = "The Azure Vault"
-L["Halls of Infusion"] = "Halls of Infusion"
-L["Neltharus"] = "Neltharus"
-L["The Nokhud Offensive"] = "The Nokhud Offensive"
-L["Halls of Valor"] = "Halls of Valor"
-L["Court of Stars"] = "Court of Stars"
-L["Temple of the Jade Serpent"] = "Temple of the Jade Serpent"
-L["Shadowmoon Burial Grounds"] = "Shadowmoon Burial Grounds"
+-- L["Dawn of the Infinite: Galakrond's Fall"] = "Dawn of the Infinite: Galakrond's Fall"
+-- L["Dawn of the Infinite: Murozond's Rise"] = "Dawn of the Infinite: Murozond's Rise"
+L["Dawn of the Infinite"] = "Dawn of the Infinite"
+L["Atal'Dazar"] = "Atal'Dazar"
+L["Waycrest Manor"] = "Waycrest Manor"
+L["Black Rook Hold"] = "Black Rook Hold"
+L["Darkheart Thicket"] = "Darkheart Thicket"
+L["The Everbloom"] = "The Everbloom"
+L["Throne of the Tides"] = "Throne of the Tides"
 
 
 -- General
@@ -77,14 +76,7 @@ L["M+17/Valor 9"] = "M+17/Valor 9"
 L["M+18/Valor 9"] = "M+18/Valor 9"
 L["M+19/Valor 10"] = "M+19/Valor 10"
 L["M+20/Valor 10"] = "M+20/Valor 10"
-L["Great Vault +13/Valor 11"] = "Great Vault +13/Valor 11"
-L["Great Vault +14/Valor 11"] = "Great Vault +14/Valor 11"
-L["Great Vault +15/Valor 12"] = "Great Vault +15/Valor 12"
-L["Great Vault +16/Valor 13"] = "Great Vault +16/Valor 13"
-L["Great Vault +17/Valor 13"] = "Great Vault +17/Valor 13"
-L["Great Vault +18"] = "Great Vault +18"
-L["Great Vault +19"] = "Great Vault +19"
-L["Great Vault +20"] = "Great Vault +20"
+L["M+21/Valor 10"] = "M+21/Valor 10"
 
 L["Class"] = "Class"
 L["All Classes"] = "All Classes"
@@ -137,3 +129,4 @@ L["Havoc"] = "Havoc"
 L["Vengeance"] = "Vengeance"
 L["Devastation"] = "Devastation"
 L["Preservation"] = "Preservation"
+L["Augmentation"] = "Augmentation"
